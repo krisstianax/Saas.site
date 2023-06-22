@@ -1,0 +1,22 @@
+- [ ] Reset CSS file
+- [ ] Links that scroll to specific sections
+	- [ ] Smooth scroll
+- [ ] SASS
+	- [ ] Modular setup with @use
+	- [ ] @use vs @import https://www.youtube.com/watch?v=CR-a8upNjJ0&t=1s
+	- [ ] What are partials https://www.youtube.com/watch?v=9Ld-aOKsEDk
+- [ ] CSS Animations
+	- [ ] Animate the Hero section
+		- [ ] Show the title first, then the 3 check items one by one, then the Call-To-Action button, then the image
+- [ ] CSS Hover effects with transition
+	- [ ] 
+- [ ] JS & CSS Libraries
+	- [ ] Use AOS (Animate on scroll) to add scrolling animations
+	- [ ] Use a JS library to create a real carousel component
+- [ ] JS Dom changes
+	- [ ] https://www.youtube.com/watch?v=0ik6X4DJKCc
+	- [ ] https://www.youtube.com/watch?v=t90K6HExEJo&list=PL4cUxeGkcC9gfoKa5la9dsdCNpuey2s-V&index=2
+	- [ ] Open/Close mobile navigation
+- [ ] Create a documentation/Readme
+	- [ ] If you have just cloned this project what do you need to do? How do you start it? How is it structured
+	- [ ] Learn to work with .md files
