@@ -1,4 +1,4 @@
-- [ ] Reset CSS file
+- [ ] Reset CSS file ✅
 - [ ] Links that scroll to specific sections
 	- [ ] Smooth scroll
 - [ ] SASS
