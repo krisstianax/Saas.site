@@ -1,0 +1,262 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+:root {
+  --background-color: #E0EAF3;
+  --dark-color: #292526;
+  --orange-color:#F86642;
+  --size-1:0.25rem;
+  --size-2:0.5rem;
+  --size-3:0.75rem;
+  --size-4:1rem;
+  --size-5:1.25rem;
+  --size-6:1.5rem;
+  --size-7:1.75rem;
+  --size-8:2rem;
+  --size-9:2.25rem;
+  --size-10:2.5rem;
+  --size-11:2.75rem;
+  --size-12:3rem;
+  --size-13:3.25rem;
+  --size-14:3.5rem;
+  --size-15:3.75rem;
+  --size-16:4rem;
+  --size-17:4.25rem;
+  --size-18:4.5rem;
+  --size-19:4.75rem;
+  --size-20:5rem;
+  --size-21:5.25rem;
+  --size-22:5.5rem;
+  --size-23:5.75rem;
+  --size-24:6rem;
+}
+
+header {
+  background-color: var(--background-color);
+  padding: var(--size-4);
+  position: relative;
+}
+header .logo {
+  position: absolute;
+  left: 8px;
+  top: 8px;
+  cursor: pointer;
+}
+header nav {
+  display: none;
+}
+header .flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: var(--size-4);
+  align-items: center;
+}
+header .flex .btnNav {
+  all: unset;
+  padding: 0.5rem 1.5rem;
+  font-weight: 500;
+  font-size: var(--size-3);
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 9px;
+  background-color: var(--orange-color);
+}
+header .flex .menu {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+header .flex .menu .nav {
+  background-color: var(--orange-color);
+  height: 2px;
+  width: 20px;
+}
+
+@media all and (min-width: 768px) {
+  header {
+    display: flex;
+    gap: var(--size-8);
+    justify-content: space-around;
+    align-items: center;
+  }
+  header .logo {
+    position: relative;
+  }
+  header nav {
+    display: flex;
+    flex-direction: row;
+    gap: var(--size-8);
+    font-size: var(--size-3);
+  }
+  header nav .list {
+    all: unset;
+    color: #1D1D1B;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  header nav .list.about {
+    color: #F86642;
+  }
+  header .btnNav {
+    all: unset;
+    padding: 0.5rem 1.5rem;
+    font-weight: 500;
+    font-size: var(--size-3);
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 9px;
+    background-color: #F86642;
+  }
+  header .flex .btnNav {
+    text-align: center;
+  }
+  header .menu .nav {
+    display: none;
+  }
+}
+@font-face {
+  font-family: Montserrat;
+  src: url(fonts/static/Outfit-ExtraLight.ttf);
+}
+#heropage {
+  text-align: center;
+  background-color: var(--background-color);
+}
+#heropage .tittle {
+  font-weight: 700;
+  padding: var(--size-4);
+  font-size: var(--size-8);
+  text-align: center;
+}
+#heropage .tittle .detail {
+  color: var(--orange-color);
+}
+#heropage .benefits {
+  padding-bottom: var(--size-3);
+  display: flex;
+  flex-direction: row;
+  gap: var(--size-2);
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+}
+#heropage .benefits .check {
+  color: var(--orange-color);
+}
+#heropage .btnTrial {
+  all: unset;
+  margin-bottom: var(--size-8);
+  border-radius: 15px;
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  background: linear-gradient(91.39deg, rgba(248, 102, 66, 0.75) 18.73%, rgba(248, 102, 66, 0.9) 100%);
+  color: #fff;
+  padding: var(--size-2) var(--size-6);
+  text-transform: uppercase;
+  font-weight: 500;
+  cursor: pointer;
+}
+#heropage .people {
+  width: 65%;
+}
+#heropage .help {
+  background-color: var(--dark-color);
+}
+#heropage .help .tittle {
+  background-color: red;
+  padding: 2rem 0;
+  color: #fff;
+  font-size: var(--size-6);
+  font-weight: 500;
+}
+#heropage .help .flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+#heropage .help .flex .customers {
+  width: 25%;
+  border-right: solid 1px var(--orange-color);
+}
+
+@media all and (min-width: 950px) {
+  #heropage .benefits {
+    padding-bottom: var(--size-3);
+    display: inline;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+  }
+}
+@font-face {
+  font-family: Montserrat;
+  src: url(fonts/static/Outfit-ExtraLight.ttf);
+}
+* {
+  box-sizing: border-box;
+}
+
+html {
+  width: 100vw;
+}
+
+body {
+  margin: 0;
+  font-family: Montserrat;
+}/*# sourceMappingURL=style.css.map */

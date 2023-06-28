@@ -1,0 +1,26 @@
+@forward 'reset.css';
+@forward './modules/_variables';
+@forward "./modules/_header";
+@forward "./modules/_heropage";
+
+
+
+@font-face {
+    font-family: Montserrat;
+    src: url(fonts/static/Outfit-ExtraLight.ttf);
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  
+  html {
+    width: 100vw;
+  }
+
+  body {
+    margin: 0;
+    font-family: Montserrat;
+  }
+
