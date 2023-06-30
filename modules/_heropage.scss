@@ -1,4 +1,3 @@
-
 @font-face {
     font-family: Montserrat;
     src: url(fonts/static/Outfit-ExtraLight.ttf);
@@ -16,7 +15,6 @@
             color:var(--orange-color);
         }
     }
-
         .benefits{
             padding-bottom: var(--size-3);
             display: flex;
@@ -65,20 +63,25 @@
     }
 }
 }
-@media all and (min-width:768px){
+@media all and (min-width:768){
     #heropage{
-    // .benefitsFlex{
-    //     display: flex;
-    //     flex-direction: row;
-    //     flex-wrap: wrap;
-    // }
-    .benefits{
-        padding-bottom: var(--size-3);
+        background-color: red;
+        display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: center;
-        font-weight: 500;
+        .tittle{
+            font-size: var(--size-8);
+        }
+        .flexBenefit{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: var(--size-4);
 
-}
-}
-}
+            .benefits{
+                font-size: var(--size-10);
+
+            }
+        }
+        }
+    }
