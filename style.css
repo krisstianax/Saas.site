@@ -218,7 +218,6 @@ header .flex .menu .nav {
   background-color: var(--dark-color);
 }
 #heropage .help .tittle {
-  background-color: red;
   padding: 2rem 0;
   color: #fff;
   font-size: var(--size-6);
@@ -235,13 +234,24 @@ header .flex .menu .nav {
   border-right: solid 1px var(--orange-color);
 }
 
-@media all and (min-width: 950px) {
-  #heropage .benefits {
-    padding-bottom: var(--size-3);
-    display: inline;
+@media all and (min-width: 768) {
+  #heropage {
+    background-color: red;
+    display: flex;
+    flex-direction: row;
     align-items: center;
+  }
+  #heropage .tittle {
+    font-size: var(--size-8);
+  }
+  #heropage .flexBenefit {
+    display: flex;
+    flex-direction: row;
     justify-content: center;
-    font-weight: 500;
+    gap: var(--size-4);
+  }
+  #heropage .flexBenefit .benefits {
+    font-size: var(--size-10);
   }
 }
 @font-face {
