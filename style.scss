@@ -2,6 +2,7 @@
 @forward './modules/_variables';
 @forward "./modules/_header";
 @forward "./modules/_heropage";
+@forward './modules/UXTeam';
 
 
 
@@ -19,8 +20,9 @@
     width: 100vw;
   }
 
-  body {
+  body{
     margin: 0;
+    // padding: 0 var(--size-8);
     font-family: Montserrat;
   }
 

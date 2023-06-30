@@ -218,7 +218,6 @@ header .flex .menu .nav {
   background-color: var(--dark-color);
 }
 #heropage .help .tittle {
-  background-color: red;
   padding: 2rem 0;
   color: #fff;
   font-size: var(--size-6);
@@ -235,13 +234,102 @@ header .flex .menu .nav {
   border-right: solid 1px var(--orange-color);
 }
 
-@media all and (min-width: 950px) {
+@media all and (min-width: 768px) {
   #heropage .benefits {
     padding-bottom: var(--size-3);
-    display: inline;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     font-weight: 500;
+  }
+}
+@font-face {
+  font-family: Montserrat;
+  src: url(fonts/static/Outfit-ExtraLight.ttf);
+}
+#UXTeam {
+  background-color: red;
+  text-align: center;
+}
+#UXTeam .tittle {
+  padding: 2rem 0;
+  color: #000;
+  font-size: var(--size-6);
+  font-weight: 700;
+  line-height: 1.15;
+}
+#UXTeam .tittle .detail {
+  color: var(--orange-color);
+}
+#UXTeam p {
+  padding: 0 0 2rem 0;
+  font-weight: 500;
+}
+#UXTeam .article .svg {
+  width: 50%;
+}
+#UXTeam .article .littleTittle {
+  font-weight: 700;
+}
+
+@media all and (min-width: 768px) {
+  #UXTeam .tittle {
+    font-size: var(--size-8);
+  }
+  #UXTeam p {
+    font-size: var(--size-5);
+  }
+  #UXTeam .article .svg {
+    width: 40%;
+  }
+  #UXTeam .article .littleTittle {
+    font-size: var(--size-5);
+  }
+}
+@media all and (min-width: 1100px) {
+  #UXTeam .tittle {
+    font-size: var(--size-10);
+    padding-bottom: var(--size-8);
+  }
+  #UXTeam p {
+    font-size: var(--size-6);
+    padding-bottom: var(--size-8);
+  }
+  #UXTeam .articleGrid {
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--size-4);
+  }
+  #UXTeam .article .svg {
+    width: 200px;
+  }
+  #UXTeam .article .text .littleTittle {
+    font-size: var(--size-7);
+    padding-bottom: var(--size-4);
+  }
+}
+@media all and (min-width: 1100px) {
+  #UXTeam .tittle {
+    font-size: var(--size-10);
+    padding: var(--size-23) 0 var(--size-10) 0;
+  }
+  #UXTeam p {
+    font-size: var(--size-6);
+    padding-bottom: var(--size-8);
+  }
+  #UXTeam .articleGrid {
+    padding: 0 var(--size-4) 0 var(--size-4);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--size-4);
+  }
+  #UXTeam .article .svg {
+    width: 200px;
+  }
+  #UXTeam .article .text .littleTittle {
+    font-size: var(--size-7);
+    padding-bottom: var(--size-4);
   }
 }
 @font-face {
