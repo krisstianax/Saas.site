@@ -248,7 +248,6 @@ header .flex .menu .nav {
   src: url(fonts/static/Outfit-ExtraLight.ttf);
 }
 #UXTeam {
-  background-color: red;
   text-align: center;
 }
 #UXTeam .tittle {
@@ -332,6 +331,26 @@ header .flex .menu .nav {
     padding-bottom: var(--size-4);
   }
 }
+@font-face {
+  font-family: Montserrat;
+  src: url(fonts/static/Outfit-ExtraLight.ttf);
+}
+#SignUp .tittle {
+  padding: 2rem 0;
+  color: red;
+  font-size: var(--size-6);
+  font-weight: 700;
+  line-height: 1.15;
+}
+#SignUp .tittle .detail {
+  color: var(--orange-color);
+}
+#SignUp p {
+  padding: 0 0 2rem 0;
+  font-weight: 500;
+  text-align: center;
+}
+
 @font-face {
   font-family: Montserrat;
   src: url(fonts/static/Outfit-ExtraLight.ttf);
