@@ -310,14 +310,14 @@ header .flex .menu .nav {
     font-size: var(--size-16);
   }
   #UXTeam p {
-    font-size: var(--size-8);
+    font-size: var(--size-4);
     padding-bottom: var(--size-12);
   }
   #UXTeam .articleGrid .article .svg {
-    width: 350px;
+    width: 200px;
   }
   #UXTeam .articleGrid .article .text .littleTittle {
-    font-size: var(--size-8);
+    font-size: var(--size-6);
     padding-bottom: var(--size-8);
   }
 }
@@ -405,11 +405,11 @@ header .flex .menu .nav {
     font-size: var(--size-16);
   }
   #signUp p {
-    font-size: var(--size-8);
+    font-size: var(--size-4);
     padding-bottom: var(--size-12);
   }
   #signUp .articleGrid .article .littleTittle {
-    font-size: var(--size-8);
+    font-size: var(--size-6);
   }
   #signUp .articleGrid .article .littleTittle .ppl {
     width: 250px;
