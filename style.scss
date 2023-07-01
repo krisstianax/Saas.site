@@ -5,8 +5,6 @@
 @forward './modules/UXTeam';
 @forward './modules/signUp';
 
-
-
 @font-face {
     font-family: Montserrat;
     src: url(fonts/static/Outfit-ExtraLight.ttf);
@@ -23,7 +21,12 @@
 
   body{
     margin: 0;
-    // padding: 0 var(--size-8);
+    padding: 0 var(--size-8);
     font-family: Montserrat;
   }
+@media all and (min-width:768px){ 
+  body{
+    padding: 0 var(--size-20);
+  }
+}
 

@@ -243,10 +243,6 @@ header .flex .menu .nav {
     font-weight: 500;
   }
 }
-@font-face {
-  font-family: Montserrat;
-  src: url(fonts/static/Outfit-ExtraLight.ttf);
-}
 #UXTeam {
   text-align: center;
 }
@@ -279,7 +275,7 @@ header .flex .menu .nav {
     font-size: var(--size-5);
   }
   #UXTeam .article .svg {
-    width: 40%;
+    width: 200px;
   }
   #UXTeam .article .littleTittle {
     font-size: var(--size-5);
@@ -295,10 +291,11 @@ header .flex .menu .nav {
     padding-bottom: var(--size-8);
   }
   #UXTeam .articleGrid {
-    padding: 0;
+    padding: 0 var(--size-16) var(--size-12) var(--size-16);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: var(--size-4);
+    align-items: center;
   }
   #UXTeam .article .svg {
     width: 200px;
@@ -308,49 +305,116 @@ header .flex .menu .nav {
     padding-bottom: var(--size-4);
   }
 }
-@media all and (min-width: 1100px) {
+@media all and (min-width: 1600px) {
   #UXTeam .tittle {
-    font-size: var(--size-10);
-    padding: var(--size-23) 0 var(--size-10) 0;
+    font-size: var(--size-16);
   }
   #UXTeam p {
-    font-size: var(--size-6);
+    font-size: var(--size-8);
+    padding-bottom: var(--size-12);
+  }
+  #UXTeam .articleGrid .article .svg {
+    width: 350px;
+  }
+  #UXTeam .articleGrid .article .text .littleTittle {
+    font-size: var(--size-8);
     padding-bottom: var(--size-8);
   }
-  #UXTeam .articleGrid {
-    padding: 0 var(--size-4) 0 var(--size-4);
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: var(--size-4);
-  }
-  #UXTeam .article .svg {
-    width: 200px;
-  }
-  #UXTeam .article .text .littleTittle {
-    font-size: var(--size-7);
-    padding-bottom: var(--size-4);
-  }
 }
-@font-face {
-  font-family: Montserrat;
-  src: url(fonts/static/Outfit-ExtraLight.ttf);
+#signUp {
+  text-align: center;
 }
-#SignUp .tittle {
+#signUp .tittle {
   padding: 2rem 0;
-  color: red;
   font-size: var(--size-6);
   font-weight: 700;
   line-height: 1.15;
 }
-#SignUp .tittle .detail {
+#signUp .tittle .detail {
   color: var(--orange-color);
 }
-#SignUp p {
+#signUp p {
   padding: 0 0 2rem 0;
   font-weight: 500;
   text-align: center;
 }
+#signUp .number {
+  border-radius: 200px;
+  width: 50px;
+}
+#signUp .littleTittle {
+  color: var(--orange-color);
+  font-weight: 500;
+  padding-bottom: var(--size-4);
+}
+#signUp .littleTittle .ppl {
+  width: 150px;
+}
+#signUp .littleTittle .people {
+  padding-bottom: var(--size-4);
+}
 
+@media all and (min-width: 768px) {
+  #signUp .tittle {
+    font-size: var(--size-8);
+  }
+  #signUp p {
+    font-size: var(--size-5);
+  }
+  #signUp .number {
+    width: 80px;
+  }
+  #signUp .article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 var(--size-12);
+  }
+  #signUp .article .littleTittle {
+    color: var(--orange-color);
+    font-weight: 700;
+    padding-bottom: var(--size-4);
+    font-size: var(--size-5);
+  }
+  #signUp .article .littleTittle .ppl {
+    width: 150px;
+  }
+}
+@media all and (min-width: 1100px) {
+  #signUp .tittle {
+    font-size: var(--size-10);
+    padding-bottom: var(--size-8);
+  }
+  #signUp p {
+    font-size: var(--size-6);
+    padding-bottom: var(--size-8);
+  }
+  #signUp .articleGrid {
+    padding: 0 var(--size-16) var(--size-12) var(--size-16);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--size-4);
+    justify-content: center;
+  }
+  #signUp .articleGrid .article .littleTittle {
+    font-size: var(--size-7);
+  }
+}
+@media all and (min-width: 1600px) {
+  #signUp .tittle {
+    font-size: var(--size-16);
+  }
+  #signUp p {
+    font-size: var(--size-8);
+    padding-bottom: var(--size-12);
+  }
+  #signUp .articleGrid .article .littleTittle {
+    font-size: var(--size-8);
+  }
+  #signUp .articleGrid .article .littleTittle .ppl {
+    width: 250px;
+  }
+}
 @font-face {
   font-family: Montserrat;
   src: url(fonts/static/Outfit-ExtraLight.ttf);
@@ -365,5 +429,12 @@ html {
 
 body {
   margin: 0;
+  padding: 0 var(--size-8);
   font-family: Montserrat;
+}
+
+@media all and (min-width: 768px) {
+  body {
+    padding: 0 var(--size-20);
+  }
 }/*# sourceMappingURL=style.css.map */
