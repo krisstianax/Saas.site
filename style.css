@@ -247,7 +247,7 @@ header .flex .menu .nav {
   text-align: center;
 }
 #UXTeam .tittle {
-  padding: 2rem 0;
+  padding: var(--size-8) 0;
   color: #000;
   font-size: var(--size-6);
   font-weight: 700;
@@ -256,8 +256,8 @@ header .flex .menu .nav {
 #UXTeam .tittle .detail {
   color: var(--orange-color);
 }
-#UXTeam p {
-  padding: 0 0 2rem 0;
+#UXTeam .text {
+  padding: 0 0 var(--size-8) 0;
   font-weight: 500;
 }
 #UXTeam .article .svg {
@@ -271,7 +271,7 @@ header .flex .menu .nav {
   #UXTeam .tittle {
     font-size: var(--size-8);
   }
-  #UXTeam p {
+  #UXTeam .text {
     font-size: var(--size-5);
   }
   #UXTeam .article .svg {
@@ -286,7 +286,7 @@ header .flex .menu .nav {
     font-size: var(--size-10);
     padding-bottom: var(--size-8);
   }
-  #UXTeam p {
+  #UXTeam .text {
     font-size: var(--size-6);
     padding-bottom: var(--size-8);
   }
@@ -309,7 +309,7 @@ header .flex .menu .nav {
   #UXTeam .tittle {
     font-size: var(--size-16);
   }
-  #UXTeam p {
+  #UXTeam .text {
     font-size: var(--size-4);
     padding-bottom: var(--size-12);
   }

@@ -3,7 +3,7 @@
     text-align: center;
 
 .tittle{
-        padding: 2rem 0;
+        padding: var(--size-8) 0;
         color:#000;
         font-size: var(--size-6);
         font-weight: 700;
@@ -12,8 +12,8 @@
             color:var(--orange-color);
         }
 }
-p{
-    padding: 0 0 2rem 0;
+.text{
+    padding: 0 0 var(--size-8) 0;
     font-weight: 500;
 }
 .article{
@@ -30,7 +30,7 @@ p{
     .tittle{
         font-size: var(--size-8);
 }
-p{
+.text{
     font-size: var(--size-5);
 }
 .article{
@@ -51,7 +51,7 @@ p{
                 padding-bottom: var(--size-8);
 
         }
-        p{
+        .text{
             font-size: var(--size-6);
             padding-bottom: var(--size-8);
 
@@ -83,7 +83,7 @@ p{
                 font-size: var(--size-16);
 
         }
-        p{
+        .text{
             font-size: var(--size-4);
             padding-bottom: var(--size-12);
         }
