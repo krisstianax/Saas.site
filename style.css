@@ -169,10 +169,6 @@ header .flex .menu .nav {
     display: none;
   }
 }
-@font-face {
-  font-family: Montserrat;
-  src: url(fonts/static/Outfit-ExtraLight.ttf);
-}
 #heropage {
   text-align: center;
   background-color: var(--background-color);
@@ -186,7 +182,7 @@ header .flex .menu .nav {
 #heropage .tittle .detail {
   color: var(--orange-color);
 }
-#heropage .benefits {
+#heropage .gridBenefit .benefits {
   padding-bottom: var(--size-3);
   display: flex;
   flex-direction: row;
@@ -195,7 +191,7 @@ header .flex .menu .nav {
   justify-content: center;
   font-weight: 500;
 }
-#heropage .benefits .check {
+#heropage .gridBenefit .benefits .check {
   color: var(--orange-color);
 }
 #heropage .btnTrial {
@@ -236,7 +232,6 @@ header .flex .menu .nav {
 
 @media all and (min-width: 768) {
   #heropage {
-    background-color: red;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -244,14 +239,29 @@ header .flex .menu .nav {
   #heropage .tittle {
     font-size: var(--size-8);
   }
-  #heropage .flexBenefit {
-    display: flex;
-    flex-direction: row;
+  #heropage .gridBenefit {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
     justify-content: center;
     gap: var(--size-4);
   }
-  #heropage .flexBenefit .benefits {
+  #heropage .gridBenefit .benefits {
     font-size: var(--size-10);
+  }
+  #heropage .help {
+    background-color: var(--dark-color);
+  }
+  #heropage .help .tittle {
+    padding: 2rem 0;
+    color: #fff;
+    font-size: var(--size-6);
+    font-weight: 500;
+  }
+  #heropage .help .flex {
+    gap: var(--size-7);
+  }
+  #heropage .help .flex .customers {
+    width: 15%;
   }
 }
 @font-face {
