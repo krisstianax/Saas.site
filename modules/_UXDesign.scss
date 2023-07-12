@@ -1,0 +1,93 @@
+#UXDesign{
+    padding: 0 var(--size-12) 0 var(--size-12);
+    background-color: var(--dark-color);
+    text-align: center;
+    .tittle{
+        padding: 2rem 0;
+        color: #fff;
+        font-size: var(--size-6);
+        font-weight: 700;
+        line-height: 1.15;
+        .detail{
+            color:var(--orange-color);
+        }
+    }
+    .gallery{
+        width: 80vw;
+    }
+    p{
+        padding: var(--size-8) 0;
+        // max-width: 1000px;
+        text-align: center;
+        color: #fff;
+        font-size: var(--size-6);
+        font-weight: 700;
+        line-height: 1.15;
+        .invertedCommas{
+            color: var(--orange-color);
+            font-size: var(--size-12);
+        }
+    }
+        .flex{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .name{
+            padding-bottom: var(--size-4);
+        }
+        .see{
+            all:unset;
+            margin-top: var(--size-6);
+            padding: var(--size-4) var(--size-8);
+            color: #fff;
+            font-weight: 500;
+            background-color: var(--orange-color);
+            border-radius: 10px;
+            cursor: pointer;
+    }
+}
+
+@media all and (min-width:768px){
+    #UXDesign{
+    .tittle{
+        font-size: var(--size-8);
+}
+p{
+    font-size: var(--size-5);
+    padding: var(--size-8);
+}
+}
+}
+@media all and (min-width:1100px){
+    #UXDesign{
+    .tittle{
+        font-size: var(--size-10);
+        padding-bottom: var(--size-8);
+}
+p{
+    font-size: var(--size-5);
+    padding: var(--size-8) var(--size-20);
+}
+}
+}
+@media all and (min-width:1600px){
+    #UXDesign{
+
+        .tittle{
+                font-size: var(--size-16);
+                padding: var(--size-16) 0;
+
+        }
+        p{
+            font-size: var(--size-5);
+        }
+        .name{
+            width: 20%;
+        }
+        .see{
+            padding: var(--size-6) var(--size-10);
+            font-size: var(--size-6);
+    }    
+}
+}

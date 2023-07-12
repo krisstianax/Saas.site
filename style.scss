@@ -2,8 +2,9 @@
 @forward './modules/_variables';
 @forward "./modules/_header";
 @forward "./modules/_heropage";
-
-
+@forward './modules/UXTeam';
+@forward './modules/signUp';
+@forward './modules/UXDesign';
 
 @font-face {
     font-family: Montserrat;
@@ -18,8 +19,14 @@
     width: 100vw;
   }
 
-  body {
+  body{
     margin: 0;
+
     font-family: Montserrat;
   }
+// @media all and (min-width:768px){ 
+//   body{
+//     padding: 0 var(--size-20);
+//   }
+// }
 

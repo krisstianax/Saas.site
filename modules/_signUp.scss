@@ -1,0 +1,116 @@
+#signUp{
+text-align: center;
+.tittle{
+    padding: 2rem 0;
+    font-size: var(--size-6);
+    font-weight: 700;
+    line-height: 1.15;
+    .detail{
+        color:var(--orange-color);
+    }
+}
+p{
+    padding: 0 0 2rem 0;
+    font-weight: 500;
+    text-align: center;
+}
+        .number{
+            border-radius:200px;
+            width: 50px;
+        }
+            .littleTittle{
+                color: var(--orange-color);
+                font-weight: 500;
+                padding-bottom: var(--size-4 );
+            .ppl{
+                width: 150px;
+            }
+//         .gradient-blur {
+//             position: fixed;
+//             z-index: 5;
+//             inset: auto 0 0 0;
+//             height: 65%;
+//             pointer-events: none;
+// }    
+        .people{
+            padding-bottom: var(--size-4);
+        }
+        }
+    }
+    @media all and (min-width:768px){
+    #signUp{
+    .tittle{
+        font-size: var(--size-8);
+    }
+    p{
+        font-size: var(--size-5);
+    }
+            .number{
+                width: 80px;
+            }
+        .article{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0 var(--size-12);
+                .littleTittle{
+                    color: var(--orange-color);
+                    font-weight: 700;
+                    padding-bottom: var(--size-4 );
+                    font-size: var(--size-5);
+                    .ppl{
+                        width: 150px;
+                    }
+            }
+
+    }
+}
+}
+@media all and (min-width:1100px){
+#signUp{
+.tittle{
+    font-size: var(--size-10);
+    padding-bottom: var(--size-8);
+}
+p{
+    font-size: var(--size-6);
+    padding-bottom: var(--size-8);
+}
+.articleGrid{
+    padding: 0 var(--size-16) var(--size-12) var(--size-16);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--size-4);
+    justify-content: center;
+
+        .article{
+                .littleTittle{
+                    font-size: var(--size-7);
+            }
+
+}
+}
+}
+}
+@media all and (min-width:1600px){
+    #signUp{
+    .tittle{
+        font-size: var(--size-16);
+    }
+    p{
+        font-size: var(--size-4);
+        padding-bottom: var(--size-12);
+    }
+        .articleGrid{
+            .article{
+                    .littleTittle{
+                        font-size: var(--size-6);
+                    .ppl{
+                        width: 250px;
+                    }
+                }
+    
+    }
+    }
+}
+    }
