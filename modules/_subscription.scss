@@ -1,0 +1,115 @@
+#subscription{
+    text-align: center;
+    background-color:#F6F6F6;
+    padding: 0 var(--size-6);
+    .menu{
+        margin: var(--size-8) var(--size-4);
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        justify-content: center;
+
+        .list{
+            all:unset;
+            font-weight: 700;
+            padding: var(--size-4) var(--size-6);
+            font-size: var(--size-3);
+            border: solid 1px var(--orange-color);
+            text-transform: uppercase;
+
+            &.black{
+                color:#fff;
+                background-color: #000;
+                border-color: #000;
+                border-top-left-radius: 10px;
+                border-bottom-left-radius: 10px;
+            }
+            &.yearly{
+                border-top-right-radius: 10px;
+                border-bottom-right-radius: 10px;
+            }
+        }
+    }
+    .plan{
+        border: solid 2px var(--orange-color);
+        border-radius: 20px;
+        padding: var(--size-8) var(--size-4);
+        margin-bottom: var(--size-4);
+        &.black{
+            background-color: var(--orange-color);
+            border-color: #000;
+            color: #fff;
+        }
+        .littleTittle{
+            font-weight: 700;
+            padding-bottom: var(--size-8);
+            font-size: var(--size-8);
+        }
+         .desc{
+            display: block;
+            font-weight: 500;
+            font-size: var(--size-4);
+        }
+    .money{
+        color: var(--orange-color);
+        font-weight: 700;
+        font-size: var(--size-8);
+        padding-bottom: var(--size-8);
+        border-bottom: solid 1px var(--orange-color);
+        &.black{
+            color:#000;
+        }
+    }
+    .design, .included{
+        font-weight: 700;
+        text-align: left;
+        padding: var(--size-8) 0 var(--size-8) var(--size-4);
+    }
+    .list{
+        text-align: left;
+        li{
+        padding-bottom: var(--size-2);
+        padding-left: var(--size-8);
+        }
+    }
+    .team{
+        text-align: left;
+        padding-bottom: var(--size-4);
+        padding-left: var(--size-8);
+        .item{
+            padding-bottom: var(--size-2);
+        }
+    }
+    .btnPlan{
+        all:unset;
+        padding: var(--size-4) var(--size-10);
+        font-weight: 600;
+        text-transform: uppercase;
+        border: solid 1px #000;
+        border-radius: 20px;
+
+    }
+}
+    .customPlan{
+        padding: var(--size-8) var(--size-8) 0 var(--size-8);
+        border-top: solid 1px #000;
+        font-weight: 700;
+        text-align: center;   
+        .detail{
+            color:var(--orange-color);
+        } 
+    }  
+    .freePlan{
+        padding: var(--size-4) var(--size-8) var(--size-8) var(--size-8);
+    }
+    .start{
+        all:unset;
+        padding: var(--size-4) var(--size-10);
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #fff;
+        background-color: var(--orange-color);
+        border-radius: 20px;
+    }  
+
+}

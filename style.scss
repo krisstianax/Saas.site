@@ -3,8 +3,10 @@
 @forward "./modules/_header";
 @forward "./modules/_heropage";
 @forward './modules/UXTeam';
-@forward './modules/signUp';
-@forward './modules/UXDesign';
+@forward './modules/_signUp';
+@forward './modules/_UXDesign';
+@forward './modules/_subscription';
+
 
 @font-face {
     font-family: Montserrat;

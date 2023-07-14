@@ -230,9 +230,9 @@ header .flex .menu .nav {
   border-right: solid 1px var(--orange-color);
 }
 
-@media all and (min-width: 768px) {
-  #heropage .benefits {
-    padding-bottom: var(--size-3);
+@media all and (min-width: 768) {
+  #heropage {
+    display: flex;
     flex-direction: row;
     align-items: center;
   }
@@ -520,6 +520,118 @@ header .flex .menu .nav {
     font-size: var(--size-6);
   }
 }
+#subscription {
+  text-align: center;
+  background-color: #F6F6F6;
+  padding: 0 var(--size-6);
+}
+#subscription .menu {
+  margin: var(--size-8) var(--size-4);
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: center;
+}
+#subscription .menu .list {
+  all: unset;
+  font-weight: 700;
+  padding: var(--size-4) var(--size-6);
+  font-size: var(--size-3);
+  border: solid 1px var(--orange-color);
+  text-transform: uppercase;
+}
+#subscription .menu .list.black {
+  color: #fff;
+  background-color: #000;
+  border-color: #000;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+#subscription .menu .list.yearly {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+#subscription .plan {
+  border: solid 2px var(--orange-color);
+  border-radius: 20px;
+  padding: var(--size-8) var(--size-4);
+  margin-bottom: var(--size-4);
+}
+#subscription .plan.black {
+  background-color: var(--orange-color);
+  border-color: #000;
+  color: #fff;
+}
+#subscription .plan .littleTittle {
+  font-weight: 700;
+  padding-bottom: var(--size-8);
+  font-size: var(--size-8);
+}
+#subscription .plan .desc {
+  display: block;
+  font-weight: 500;
+  font-size: var(--size-4);
+}
+#subscription .plan .money {
+  color: var(--orange-color);
+  font-weight: 700;
+  font-size: var(--size-8);
+  padding-bottom: var(--size-8);
+  border-bottom: solid 1px var(--orange-color);
+}
+#subscription .plan .money.black {
+  color: #000;
+}
+#subscription .plan .design, #subscription .plan .included {
+  font-weight: 700;
+  text-align: left;
+  padding: var(--size-8) 0 var(--size-8) var(--size-4);
+}
+#subscription .plan .list {
+  text-align: left;
+}
+#subscription .plan .list li {
+  padding-bottom: var(--size-2);
+  padding-left: var(--size-8);
+}
+#subscription .plan .team {
+  text-align: left;
+  padding-bottom: var(--size-4);
+  padding-left: var(--size-8);
+}
+#subscription .plan .team .item {
+  padding-bottom: var(--size-2);
+}
+#subscription .plan .btnPlan {
+  all: unset;
+  padding: var(--size-4) var(--size-10);
+  font-weight: 600;
+  text-transform: uppercase;
+  border: solid 1px #000;
+  border-radius: 20px;
+}
+#subscription .customPlan {
+  padding: var(--size-8) var(--size-8) 0 var(--size-8);
+  border-top: solid 1px #000;
+  font-weight: 700;
+  text-align: center;
+}
+#subscription .customPlan .detail {
+  color: var(--orange-color);
+}
+#subscription .freePlan {
+  padding: var(--size-4) var(--size-8) var(--size-8) var(--size-8);
+}
+#subscription .start {
+  all: unset;
+  padding: var(--size-4) var(--size-10);
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: var(--orange-color);
+  border-radius: 20px;
+}
+
 @font-face {
   font-family: Montserrat;
   src: url(fonts/static/Outfit-ExtraLight.ttf);
