@@ -8,6 +8,7 @@
         flex-direction: row;
         list-style: none;
         justify-content: center;
+        cursor: pointer;
 
         .list{
             all:unset;
@@ -30,66 +31,77 @@
             }
         }
     }
-    .plan{
-        border: solid 2px var(--orange-color);
-        border-radius: 20px;
-        padding: var(--size-8) var(--size-4);
-        margin-bottom: var(--size-4);
-        &.black{
-            background-color: var(--orange-color);
-            border-color: #000;
-            color: #fff;
-        }
-        .littleTittle{
+    .plans{
+        .plan{
+            border: solid 2px var(--orange-color);
+            border-radius: 20px;
+            padding: var(--size-8) var(--size-4);
+            margin-bottom: var(--size-4);
+            &.black{
+                background-color: var(--orange-color);
+                border-color: #000;
+                color: #fff;
+            }
+            .littleTittle{
+                font-weight: 700;
+                padding-bottom: var(--size-8);
+                font-size: var(--size-8);
+            }
+            .desc{
+                display: block;
+                font-weight: 500;
+                font-size: var(--size-4);
+            }
+        .money{
+            color: var(--orange-color);
             font-weight: 700;
-            padding-bottom: var(--size-8);
             font-size: var(--size-8);
+            padding-bottom: var(--size-8);
+            border-bottom: solid 1px var(--orange-color);
+            &.black{
+                color:#000;
+                border-bottom: solid 1px #000;
+            }
         }
-         .desc{
-            display: block;
-            font-weight: 500;
-            font-size: var(--size-4);
+        .design, .included{
+            font-weight: 700;
+            text-align: left;
+            padding: var(--size-8) 0 var(--size-8) var(--size-4);
         }
-    .money{
-        color: var(--orange-color);
-        font-weight: 700;
-        font-size: var(--size-8);
-        padding-bottom: var(--size-8);
-        border-bottom: solid 1px var(--orange-color);
-        &.black{
-            color:#000;
-        }
-    }
-    .design, .included{
-        font-weight: 700;
-        text-align: left;
-        padding: var(--size-8) 0 var(--size-8) var(--size-4);
-    }
-    .list{
-        text-align: left;
-        li{
-        padding-bottom: var(--size-2);
-        padding-left: var(--size-8);
-        }
-    }
-    .team{
-        text-align: left;
-        padding-bottom: var(--size-4);
-        padding-left: var(--size-8);
-        .item{
+        .list{
+            text-align: left;
+            .info{
             padding-bottom: var(--size-2);
+            padding-left: var(--size-8);
+            }
+        }
+        .team{
+            text-align: left;
+            padding-bottom: var(--size-6);
+            padding-left: var(--size-8);
+            &.design{
+            .item{
+                padding-bottom: var(--size-2);
+                font-weight: 400;
+            }
+        }
+        }
+        .btnPlan{
+            position: relative;
+            all:unset;
+            padding: var(--size-4) var(--size-10);
+            font-weight: 600;
+            text-transform: uppercase;
+            border: solid 1px #000;
+            border-radius: 20px;
+            cursor: pointer;
+            &.white{
+                border-color: #fff;
+            }
+        }
         }
     }
-    .btnPlan{
-        all:unset;
-        padding: var(--size-4) var(--size-10);
-        font-weight: 600;
-        text-transform: uppercase;
-        border: solid 1px #000;
-        border-radius: 20px;
 
-    }
-}
     .customPlan{
         padding: var(--size-8) var(--size-8) 0 var(--size-8);
         border-top: solid 1px #000;
@@ -97,6 +109,7 @@
         text-align: center;   
         .detail{
             color:var(--orange-color);
+            cursor: pointer;
         } 
     }  
     .freePlan{
@@ -110,6 +123,155 @@
         color: #fff;
         background-color: var(--orange-color);
         border-radius: 20px;
+        cursor: pointer;
     }  
 
+}
+@media all and (min-width:768px){
+    #subscription{
+        padding: 0 var(--size-14);
+        .menu{
+            .list{
+                padding: var(--size-6) var(--size-8);
+                font-size: var(--size-5);
+            }
+        }
+        .plans{
+            .plan{
+                padding: var(--size-10) var(--size-5);
+                margin-bottom: var(--size-6);
+                .littleTittle{
+                    padding-bottom: var(--size-12);
+                    font-size: var(--size-8);
+                }
+                .desc{
+                    font-size: var(--size-6);
+                }
+            .money{
+                padding-bottom: var(--size-10);
+                font-size: var(--size-10);
+            }
+            .design, .included{
+                font-size: var(--size-6);
+            }
+            .list{
+                .info{
+                font-size: var(--size-6);
+                padding-bottom: var(--size-6);
+                }
+            }
+            .team{
+                padding-bottom: var(--size-12);
+                font-size: var(--size-6);
+                &.design{
+                .item{
+                    padding-bottom: var(--size-2);
+                }
+            }
+            }
+            .btnPlan{
+                font-size: var(--size-8);
+                padding: var(--size-6) var(--size-12);
+        
+            }
+        }
+    }
+        .customPlan{
+            font-size: var(--size-6);
+        }  
+        .freePlan{
+            padding: var(--size-4) var(--size-8) var(--size-12) var(--size-8);
+            font-size: var(--size-5);
+        }
+        .start{
+            padding: var(--size-6) var(--size-12);
+            font-size: var(--size-8);
+        }  
+    }
+}
+    @media all and (min-width:1100px){
+        #subscription{
+            .menu{
+                margin: var(--size-8) var(--size-4);
+                display: flex;
+                flex-direction: row;
+                list-style: none;
+                justify-content: center;
+        
+                .list{
+                    all:unset;
+                    font-weight: 700;
+                    padding: var(--size-4) var(--size-6);
+                    font-size: var(--size-3);
+                    border: solid 1px var(--orange-color);
+                    text-transform: uppercase;
+        
+                    &.black{
+                        color:#fff;
+                        background-color: #000;
+                        border-color: #000;
+                        border-top-left-radius: 10px;
+                        border-bottom-left-radius: 10px;
+                    }
+                    &.yearly{
+                        border-top-right-radius: 10px;
+                        border-bottom-right-radius: 10px;
+                    }
+                }
+            }
+            .plans{
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: var(--size-6);
+                align-items: stretch;
+                align-content: center;
+                .plan{
+                    display: grid;
+                    .desc{
+                        font-size: var(--size-6);
+                    }
+                .money{
+                    font-size: var(--size-10);
+                }
+            }
+        }
+    }
+}
+@media all and (min-width:1600px){
+    #subscription{
+        .menu{
+            .list{
+                padding: var(--size-6) var(--size-8);
+                font-size: var(--size-4);
+            }
+        }
+        .plans{
+            gap: var(--size-8);
+            .plan{
+                &.black{
+                    background-color: var(--orange-color);
+                    border-color: #000;
+                    color: #fff;
+                }
+                .littleTittle{
+                    padding-bottom: var(--size-12);
+                    font-size: var(--size-12);
+                }
+                .desc{
+                    font-size: var(--size-6);
+                }
+            .money{
+                font-size: var(--size-12);
+            }
+            .team{
+                padding-right: var(--size-8);
+                &.design{
+                .item{
+                    padding-bottom: var(--size-6);
+                }
+            }
+            }
+        } 
+    }
+}
 }

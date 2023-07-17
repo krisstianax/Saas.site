@@ -531,6 +531,7 @@ header .flex .menu .nav {
   flex-direction: row;
   list-style: none;
   justify-content: center;
+  cursor: pointer;
 }
 #subscription .menu .list {
   all: unset;
@@ -551,64 +552,71 @@ header .flex .menu .nav {
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
 }
-#subscription .plan {
+#subscription .plans .plan {
   border: solid 2px var(--orange-color);
   border-radius: 20px;
   padding: var(--size-8) var(--size-4);
   margin-bottom: var(--size-4);
 }
-#subscription .plan.black {
+#subscription .plans .plan.black {
   background-color: var(--orange-color);
   border-color: #000;
   color: #fff;
 }
-#subscription .plan .littleTittle {
+#subscription .plans .plan .littleTittle {
   font-weight: 700;
   padding-bottom: var(--size-8);
   font-size: var(--size-8);
 }
-#subscription .plan .desc {
+#subscription .plans .plan .desc {
   display: block;
   font-weight: 500;
   font-size: var(--size-4);
 }
-#subscription .plan .money {
+#subscription .plans .plan .money {
   color: var(--orange-color);
   font-weight: 700;
   font-size: var(--size-8);
   padding-bottom: var(--size-8);
   border-bottom: solid 1px var(--orange-color);
 }
-#subscription .plan .money.black {
+#subscription .plans .plan .money.black {
   color: #000;
+  border-bottom: solid 1px #000;
 }
-#subscription .plan .design, #subscription .plan .included {
+#subscription .plans .plan .design, #subscription .plans .plan .included {
   font-weight: 700;
   text-align: left;
   padding: var(--size-8) 0 var(--size-8) var(--size-4);
 }
-#subscription .plan .list {
+#subscription .plans .plan .list {
   text-align: left;
 }
-#subscription .plan .list li {
+#subscription .plans .plan .list .info {
   padding-bottom: var(--size-2);
   padding-left: var(--size-8);
 }
-#subscription .plan .team {
+#subscription .plans .plan .team {
   text-align: left;
-  padding-bottom: var(--size-4);
+  padding-bottom: var(--size-6);
   padding-left: var(--size-8);
 }
-#subscription .plan .team .item {
+#subscription .plans .plan .team.design .item {
   padding-bottom: var(--size-2);
+  font-weight: 400;
 }
-#subscription .plan .btnPlan {
+#subscription .plans .plan .btnPlan {
+  position: relative;
   all: unset;
   padding: var(--size-4) var(--size-10);
   font-weight: 600;
   text-transform: uppercase;
   border: solid 1px #000;
   border-radius: 20px;
+  cursor: pointer;
+}
+#subscription .plans .plan .btnPlan.white {
+  border-color: #fff;
 }
 #subscription .customPlan {
   padding: var(--size-8) var(--size-8) 0 var(--size-8);
@@ -618,6 +626,7 @@ header .flex .menu .nav {
 }
 #subscription .customPlan .detail {
   color: var(--orange-color);
+  cursor: pointer;
 }
 #subscription .freePlan {
   padding: var(--size-4) var(--size-8) var(--size-8) var(--size-8);
@@ -630,8 +639,136 @@ header .flex .menu .nav {
   color: #fff;
   background-color: var(--orange-color);
   border-radius: 20px;
+  cursor: pointer;
 }
 
+@media all and (min-width: 768px) {
+  #subscription {
+    padding: 0 var(--size-14);
+  }
+  #subscription .menu .list {
+    padding: var(--size-6) var(--size-8);
+    font-size: var(--size-5);
+  }
+  #subscription .plans .plan {
+    padding: var(--size-10) var(--size-5);
+    margin-bottom: var(--size-6);
+  }
+  #subscription .plans .plan .littleTittle {
+    padding-bottom: var(--size-12);
+    font-size: var(--size-8);
+  }
+  #subscription .plans .plan .desc {
+    font-size: var(--size-6);
+  }
+  #subscription .plans .plan .money {
+    padding-bottom: var(--size-10);
+    font-size: var(--size-10);
+  }
+  #subscription .plans .plan .design, #subscription .plans .plan .included {
+    font-size: var(--size-6);
+  }
+  #subscription .plans .plan .list .info {
+    font-size: var(--size-6);
+    padding-bottom: var(--size-6);
+  }
+  #subscription .plans .plan .team {
+    padding-bottom: var(--size-12);
+    font-size: var(--size-6);
+  }
+  #subscription .plans .plan .team.design .item {
+    padding-bottom: var(--size-2);
+  }
+  #subscription .plans .plan .btnPlan {
+    font-size: var(--size-8);
+    padding: var(--size-6) var(--size-12);
+  }
+  #subscription .customPlan {
+    font-size: var(--size-6);
+  }
+  #subscription .freePlan {
+    padding: var(--size-4) var(--size-8) var(--size-12) var(--size-8);
+    font-size: var(--size-5);
+  }
+  #subscription .start {
+    padding: var(--size-6) var(--size-12);
+    font-size: var(--size-8);
+  }
+}
+@media all and (min-width: 1100px) {
+  #subscription .menu {
+    margin: var(--size-8) var(--size-4);
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: center;
+  }
+  #subscription .menu .list {
+    all: unset;
+    font-weight: 700;
+    padding: var(--size-4) var(--size-6);
+    font-size: var(--size-3);
+    border: solid 1px var(--orange-color);
+    text-transform: uppercase;
+  }
+  #subscription .menu .list.black {
+    color: #fff;
+    background-color: #000;
+    border-color: #000;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  #subscription .menu .list.yearly {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  #subscription .plans {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--size-6);
+    align-items: stretch;
+    align-content: center;
+  }
+  #subscription .plans .plan {
+    display: grid;
+  }
+  #subscription .plans .plan .desc {
+    font-size: var(--size-6);
+  }
+  #subscription .plans .plan .money {
+    font-size: var(--size-10);
+  }
+}
+@media all and (min-width: 1600px) {
+  #subscription .menu .list {
+    padding: var(--size-6) var(--size-8);
+    font-size: var(--size-4);
+  }
+  #subscription .plans {
+    gap: var(--size-8);
+  }
+  #subscription .plans .plan.black {
+    background-color: var(--orange-color);
+    border-color: #000;
+    color: #fff;
+  }
+  #subscription .plans .plan .littleTittle {
+    padding-bottom: var(--size-12);
+    font-size: var(--size-12);
+  }
+  #subscription .plans .plan .desc {
+    font-size: var(--size-6);
+  }
+  #subscription .plans .plan .money {
+    font-size: var(--size-12);
+  }
+  #subscription .plans .plan .team {
+    padding-right: var(--size-8);
+  }
+  #subscription .plans .plan .team.design .item {
+    padding-bottom: var(--size-6);
+  }
+}
 @font-face {
   font-family: Montserrat;
   src: url(fonts/static/Outfit-ExtraLight.ttf);
