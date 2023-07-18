@@ -6,6 +6,7 @@
 @forward './modules/_signUp';
 @forward './modules/_UXDesign';
 @forward './modules/_subscription';
+@forward './modules/_TDP';
 
 
 @font-face {
@@ -23,6 +24,7 @@
 
   body{
     margin: 0;
+    // padding: 0 var(--size-20);
 
     font-family: Montserrat;
   }
