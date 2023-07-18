@@ -926,6 +926,76 @@ header .flex .menu .nav {
     padding: var(--size-6) var(--size-10);
   }
 }
+#join {
+  text-align: center;
+  background-color: #F6F6F6;
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-6);
+  justify-content: space-around;
+  align-items: center;
+}
+#join .tittle {
+  padding: var(--size-24) 0 var(--size-4) 0;
+  font-size: var(--size-6);
+  font-weight: 700;
+  line-height: 1.15;
+}
+#join .tittle .detail {
+  color: var(--orange-color);
+}
+#join .info {
+  padding-bottom: var(--size-12);
+}
+#join .start {
+  all: unset;
+  margin-bottom: var(--size-8);
+  padding: var(--size-4) var(--size-10);
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: var(--orange-color);
+  border-radius: 20px;
+  cursor: pointer;
+}
+#join .people {
+  width: 70%;
+}
+
+@media all and (min-width: 768px) {
+  #join .tittle {
+    font-size: var(--size-8);
+  }
+  #join .info {
+    font-size: var(--size-5);
+  }
+  #join .start {
+    padding: var(--size-6) var(--size-12);
+    font-size: var(--size-8);
+  }
+}
+@media all and (min-width: 1100px) {
+  #join .tittle {
+    font-size: var(--size-10);
+  }
+  #join .info {
+    font-size: var(--size-6);
+  }
+  #join .start {
+    font-size: var(--size-8);
+  }
+}
+@media all and (min-width: 1600px) {
+  #join .tittle {
+    font-size: var(--size-16);
+  }
+  #join .info {
+    font-size: var(--size-7);
+  }
+  #join .people {
+    max-width: 40%;
+  }
+}
 @font-face {
   font-family: Montserrat;
   src: url(fonts/static/Outfit-ExtraLight.ttf);
