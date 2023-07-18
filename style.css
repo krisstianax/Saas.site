@@ -852,6 +852,80 @@ header .flex .menu .nav {
     margin: 0 0 var(--size-8) var(--size-4);
   }
 }
+#popularQuestions {
+  padding: var(--size-4);
+  background-color: #F6F6F6;
+}
+#popularQuestions .tittle {
+  padding: var(--size-24) 0 var(--size-12) 0;
+  font-size: var(--size-6);
+  text-align: center;
+  font-weight: 700;
+  line-height: 1.15;
+}
+#popularQuestions .tittle .detail {
+  color: var(--orange-color);
+}
+#popularQuestions .list .questions {
+  position: relative;
+  margin-bottom: var(--size-6);
+  padding: var(--size-4) var(--size-6);
+  border-bottom: solid 2px var(--orange-color);
+}
+#popularQuestions .list .questions::after {
+  content: "";
+  position: absolute;
+  right: 16px;
+  transform: translate(-50%, -50%);
+  border: solid var(--orange-color);
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  cursor: pointer;
+}
+
+@media all and (min-width: 768px) {
+  #popularQuestions .tittle {
+    font-size: var(--size-8);
+  }
+  #popularQuestions .tittle .detail {
+    color: var(--orange-color);
+  }
+  #popularQuestions .list .questions {
+    font-size: var(--size-6);
+  }
+  #popularQuestions .list .questions::after {
+    border-width: 0 6px 6px 0;
+    padding: 6px;
+  }
+}
+@media all and (min-width: 1100px) {
+  #popularQuestions {
+    padding: 0 var(--size-24);
+  }
+  #popularQuestions .tittle {
+    font-size: var(--size-10);
+    padding-bottom: var(--size-8);
+  }
+  #popularQuestions .list .questions {
+    margin-bottom: var(--size-10);
+    font-size: var(--size-7);
+  }
+}
+@media all and (min-width: 1600px) {
+  #popularQuestions {
+    padding: 0 var(--size-24);
+  }
+  #popularQuestions .tittle {
+    font-size: var(--size-16);
+    padding-bottom: var(--size-8);
+  }
+  #popularQuestions .list .questions {
+    padding: var(--size-6) var(--size-10);
+  }
+}
 @font-face {
   font-family: Montserrat;
   src: url(fonts/static/Outfit-ExtraLight.ttf);
