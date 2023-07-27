@@ -1,12 +1,12 @@
-#heropage{
+#hero{
     text-align: center;
     background-color:var(--background-color);
 
     .tittle{
         font-weight: 700;
         padding: var(--size-4);
-             font-size: var(--size-8);
-            text-align: center;
+        font-size: var(--size-8);
+        text-align: center;
         .detail{
             color:var(--orange-color);
         }
@@ -43,8 +43,9 @@
     }
     .help{
         background-color:var(--dark-color);
+        width: 100%;
         .tittle{
-            padding: 2rem 0;
+            padding: var(--size-8) 0;
             color:#fff;
             font-size: var(--size-6);
             font-weight: 500;
@@ -61,38 +62,71 @@
     }
 }
 }
-@media all and (min-width:768){
-    #heropage{
+@media all and (min-width:768px){
+    #hero{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
         .tittle{
-            font-size: var(--size-8);
+            font-size: var(--size-10);
         }
         .gridBenefit{
-            display: grid;
-            grid-template-rows: repeat(3,1fr);
-            justify-content: center;
-            gap: var(--size-4);
+            display: flex;
+            justify-content: space-between;
+            gap: var(--size-2);
+            padding-bottom: var(--size-8);
 
             .benefits{
-                font-size: var(--size-10);
-            }
+            font-weight: 700;
+        }
+    }
+        .btnTrial{
+            margin-bottom: var(--size-8);
+            padding: var(--size-4) var(--size-10);
+            font-size: var(--size-6);
         }
         .help{
-            background-color:var(--dark-color);
+            width: 100%;
             .tittle{
-                padding: 2rem 0;
+                padding: var(--size-8) 0;
                 color:#fff;
                 font-size: var(--size-6);
                 font-weight: 500;
             }
             .flex{
                 gap: var(--size-7);
+                justify-content: center;
                 .customers{
-                    width: 15%;
+                    width: 20%;
+
         }
     }
         }
     }
+}
+@media all and (min-width:1100px){
+    #hero{
+        .tittle{
+            font-size: var(--size-12);
+            padding: 0 var(--size-24);
+        }
+        .gridBenefit{
+              .benefits{
+            font-size: var(--size-6);
+        }
+    }
+        .help{
+            .tittle{
+                font-size: var(--size-10);
+            }
+    }
+}
+}
+@media all and (min-width:1600px){
+    #hero{
+        .tittle{
+            font-size: var(--size-16);
+            padding-bottom: var(--size-8);
+        }
+}
 }
