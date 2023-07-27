@@ -50,6 +50,7 @@ header {
 }
 @media all and (min-width:768px){
     header{ 
+        padding-bottom: var(--size-12);
         display: flex;
         gap:var(--size-8);
         justify-content: space-around;
@@ -96,4 +97,22 @@ header {
                     }
             }
         }
+}
+@media all and (min-width:1100px){
+    header{ 
+        nav{
+            gap:var(--size-10);
+            font-size: var(--size-6);
+            .list{
+                font-size: var(--size-5);
+            }
+        }
+        .flex{
+            .btnNav{
+                padding: var(--size-4) var(--size-8);
+                font-size: var(--size-5);
+            }
+
+    }
+}
 }
