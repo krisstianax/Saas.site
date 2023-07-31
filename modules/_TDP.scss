@@ -1,0 +1,96 @@
+#TDP{
+    text-align: center;
+    background-color: #F6F6F6;
+    .tittle{
+        padding: var(--size-24) 0 var(--size-12) 0 ;
+        font-size: var(--size-6);
+        font-weight: 700;
+        line-height: 1.15;
+        .detail{
+            color:var(--orange-color);
+        }
+    }
+    ul{
+        .left, .right{
+            padding: var(--size-4) var(--size-6);
+            color: #fff;
+            font-weight: 500;
+        }
+        .left{
+            margin: 0 var(--size-7) var(--size-4) var(--size-4);
+            border-radius: 50px 50px 50px 0;
+            background-color: #000;
+        }
+        .right{
+            margin: 0 var(--size-4) var(--size-4) var(--size-7);
+            border-radius: 50px 50px 0 50px;
+            background-color: #000;
+        &.first{
+            background-color: var(--orange-color);
+        }
+    }
+    }
+}
+@media all and (min-width:768px){
+    #TDP{
+
+    .tittle{
+        font-size: var(--size-8);
+    }
+    ul{
+        .left, .right{
+            padding: var(--size-6) var(--size-12);
+            font-size: var(--size-5);
+        }
+
+        .left{
+            margin: 0 var(--size-10) var(--size-8) var(--size-4);
+        }
+
+        .right{
+            margin: 0 var(--size-4) var(--size-8) var(--size-10);
+    }
+}
+}
+}
+@media all and (min-width:1100px){
+    #TDP{
+        padding: 0 var(--size-24);
+    .tittle{
+        font-size: var(--size-10);
+        padding-bottom: var(--size-8);
+    }
+    ul{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: start;
+        .left, .right{
+            font-size: var(--size-6);
+        }
+        .left{
+            margin:0 0 var(--size-8) var(--size-4) ;
+        }
+    
+    }
+}
+}
+@media all and (min-width:1600px){
+    #TDP{
+    .tittle{
+        font-size: var(--size-16);
+        padding-bottom: var(--size-16);
+    }
+    ul{
+        gap: var(--size-10);
+        .left, .right{
+            font-size: var(--size-6);
+            padding: var(--size-12) var(--size-24);
+
+        }
+        .left{
+            margin:0 0 var(--size-8) var(--size-4) ;
+        }
+    
+}
+}
+}
