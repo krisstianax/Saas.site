@@ -220,6 +220,10 @@ header .flex .menu .nav {
   text-transform: uppercase;
   font-weight: 500;
   cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+#hero .btnTrial:hover {
+  transform: translateY(-10px);
 }
 #hero .people {
   width: 65%;
