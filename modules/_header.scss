@@ -20,6 +20,7 @@ header {
         justify-content: flex-end;
         gap:var(--size-4);
         align-items: center;
+    }
 
         .btnNav{
             all:unset;
@@ -29,9 +30,14 @@ header {
             color: #fff;
             text-transform: uppercase;
             cursor: pointer;
-
             border-radius: 9px;
             background-color: var(--orange-color);
+            transition: all 0.3s ease 0s;
+        }
+        .btnNav:hover {
+            transform: translateX(-5px);
+            background-color: #000;
+            border: none;
 
         }
         .menu{
@@ -44,10 +50,14 @@ header {
             background-color: var(--orange-color);
             height: 2px;
             width: 20px;
+                    transition: all 0.3s ease 0s;
+    .flex:hover{
+        color: var(--orange-color)
+    }
             }
         }
   }
-}
+
 @media all and (min-width:768px){
     header{ 
         padding-bottom: var(--size-12);

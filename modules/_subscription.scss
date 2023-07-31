@@ -9,6 +9,8 @@
         list-style: none;
         justify-content: center;
         cursor: pointer;
+    }
+
 
         .list{
             all:unset;
@@ -25,12 +27,20 @@
                 border-top-left-radius: 10px;
                 border-bottom-left-radius: 10px;
             }
+            &.quarterly:hover{
+                transition: all 0.3s ease 0s;
+                background-color: var(--orange-color);
+            }
             &.yearly{
+                transition: all 0.3s ease 0s;
                 border-top-right-radius: 10px;
                 border-bottom-right-radius: 10px;
+
+            }
+            &.yearly:hover{
+                background-color: var(--orange-color);
             }
         }
-    }
     .plans{
         .plan{
             border: solid 2px var(--orange-color);
@@ -70,6 +80,7 @@
         }
         .list{
             text-align: left;
+            border: none;
             .info{
             padding-bottom: var(--size-2);
             padding-left: var(--size-8);
@@ -95,12 +106,21 @@
             border: solid 1px #000;
             border-radius: 20px;
             cursor: pointer;
+            transition: all 0.3s ease 0s;
             &.white{
                 border-color: #fff;
             }
         }
+}
+        .btnPlan:hover {
+            transform: translateY(-10px);
+            background-color: var(--orange-color);
+            border: none;
+        &.white:hover{
+            background-color: #000;
         }
     }
+}
 
     .customPlan{
         padding: var(--size-8) var(--size-8) 0 var(--size-8);
@@ -124,8 +144,12 @@
         background-color: var(--orange-color);
         border-radius: 20px;
         cursor: pointer;
+        transition: all 0.3s ease 0s;
+        .start:hover {
+            transform: translateY(-10px);
+            background-color: #000;
     }  
-
+}
 }
 @media all and (min-width:768px){
     #subscription{
@@ -189,6 +213,7 @@
         }  
     }
 }
+
     @media all and (min-width:1100px){
         #subscription{
             .menu{

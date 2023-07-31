@@ -103,7 +103,7 @@ header .flex {
   gap: var(--size-4);
   align-items: center;
 }
-header .flex .btnNav {
+header .btnNav {
   all: unset;
   padding: 0.5rem 1.5rem;
   font-weight: 500;
@@ -113,17 +113,27 @@ header .flex .btnNav {
   cursor: pointer;
   border-radius: 9px;
   background-color: var(--orange-color);
+  transition: all 0.3s ease 0s;
 }
-header .flex .menu {
+header .btnNav:hover {
+  transform: translateX(-5px);
+  background-color: #000;
+  border: none;
+}
+header .menu {
   margin: 0;
   display: flex;
   flex-direction: column;
   gap: 3px;
 }
-header .flex .menu .nav {
+header .menu .nav {
   background-color: var(--orange-color);
   height: 2px;
   width: 20px;
+  transition: all 0.3s ease 0s;
+}
+header .menu .nav .flex:hover {
+  color: var(--orange-color);
 }
 
 @media all and (min-width: 768px) {
@@ -224,6 +234,7 @@ header .flex .menu .nav {
 }
 #hero .btnTrial:hover {
   transform: translateY(-10px);
+  background-color: var(--orange-color);
 }
 #hero .people {
   width: 65%;
@@ -526,6 +537,12 @@ header .flex .menu .nav {
   background-color: var(--orange-color);
   border-radius: 10px;
   cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+#UXDesign .see:hover {
+  transform: translateY(-10px);
+  background-color: #000;
+  border: solid 1px #fff;
 }
 
 @media all and (min-width: 768px) {
@@ -576,7 +593,7 @@ header .flex .menu .nav {
   justify-content: center;
   cursor: pointer;
 }
-#subscription .menu .list {
+#subscription .list {
   all: unset;
   font-weight: 700;
   padding: var(--size-4) var(--size-6);
@@ -584,16 +601,24 @@ header .flex .menu .nav {
   border: solid 1px var(--orange-color);
   text-transform: uppercase;
 }
-#subscription .menu .list.black {
+#subscription .list.black {
   color: #fff;
   background-color: #000;
   border-color: #000;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
 }
-#subscription .menu .list.yearly {
+#subscription .list.quarterly:hover {
+  transition: all 0.3s ease 0s;
+  background-color: var(--orange-color);
+}
+#subscription .list.yearly {
+  transition: all 0.3s ease 0s;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
+}
+#subscription .list.yearly:hover {
+  background-color: var(--orange-color);
 }
 #subscription .plans .plan {
   border: solid 2px var(--orange-color);
@@ -634,6 +659,7 @@ header .flex .menu .nav {
 }
 #subscription .plans .plan .list {
   text-align: left;
+  border: none;
 }
 #subscription .plans .plan .list .info {
   padding-bottom: var(--size-2);
@@ -657,9 +683,18 @@ header .flex .menu .nav {
   border: solid 1px #000;
   border-radius: 20px;
   cursor: pointer;
+  transition: all 0.3s ease 0s;
 }
 #subscription .plans .plan .btnPlan.white {
   border-color: #fff;
+}
+#subscription .plans .btnPlan:hover {
+  transform: translateY(-10px);
+  background-color: var(--orange-color);
+  border: none;
+}
+#subscription .plans .btnPlan:hover.white:hover {
+  background-color: #000;
 }
 #subscription .customPlan {
   padding: var(--size-8) var(--size-8) 0 var(--size-8);
@@ -683,6 +718,11 @@ header .flex .menu .nav {
   background-color: var(--orange-color);
   border-radius: 20px;
   cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+#subscription .start .start:hover {
+  transform: translateY(-10px);
+  background-color: #000;
 }
 
 @media all and (min-width: 768px) {

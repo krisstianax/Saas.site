@@ -45,6 +45,12 @@
             background-color: var(--orange-color);
             border-radius: 10px;
             cursor: pointer;
+            transition: all 0.3s ease 0s;
+        }
+        .see:hover {
+            transform: translateY(-10px);
+            background-color: #000;
+            border: solid 1px #fff;
     }
 }
 
