@@ -6,7 +6,7 @@
     
 
     .tittle{
-        max-width: 1700px; 
+        max-width: 1600px; 
         margin:auto; 
         font-weight: 700;
         padding: var(--size-6);
@@ -88,7 +88,7 @@
         .gridBenefit{
             display: flex;
             justify-content: space-between;
-            gap: var(--size-2);
+            gap: var(--size-10);
             padding-bottom: var(--size-8);
 
             .benefits{
@@ -130,11 +130,15 @@
             font-size: var(--size-6);
         }
     }
+    .btnTrial{
+        margin-top: 2rem;
+    }
         .help{
             .tittle{
                 font-size: var(--size-10);
             }
     }
+
 }
 }
 @media all and (min-width:1600px){
