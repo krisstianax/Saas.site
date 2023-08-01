@@ -11,7 +11,7 @@
             color:var(--orange-color);
         }
     }
-    .gridBenefit{
+    .benefitsFlex{
         .benefits{
             padding-bottom: var(--size-3);
             display: flex;
@@ -75,8 +75,9 @@
         .tittle{
             font-size: var(--size-10);
         }
-        .gridBenefit{
+        .benefitsFlex{
             display: flex;
+            flex-direction: column;
             justify-content: space-between;
             gap: var(--size-2);
             padding-bottom: var(--size-8);
@@ -115,7 +116,7 @@
             font-size: var(--size-12);
             padding: 0 var(--size-24);
         }
-        .gridBenefit{
+        .benefitsFlex{
               .benefits{
             font-size: var(--size-6);
         }

@@ -206,7 +206,7 @@ header .menu .nav .flex:hover {
 #hero .tittle .detail {
   color: var(--orange-color);
 }
-#hero .gridBenefit .benefits {
+#hero .benefitsFlex .benefits {
   padding-bottom: var(--size-3);
   display: flex;
   flex-direction: row;
@@ -215,7 +215,7 @@ header .menu .nav .flex:hover {
   justify-content: center;
   font-weight: 500;
 }
-#hero .gridBenefit .benefits .check {
+#hero .benefitsFlex .benefits .check {
   color: var(--orange-color);
 }
 #hero .btnTrial {
@@ -269,13 +269,14 @@ header .menu .nav .flex:hover {
   #hero .tittle {
     font-size: var(--size-10);
   }
-  #hero .gridBenefit {
+  #hero .benefitsFlex {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     gap: var(--size-2);
     padding-bottom: var(--size-8);
   }
-  #hero .gridBenefit .benefits {
+  #hero .benefitsFlex .benefits {
     font-weight: 700;
   }
   #hero .btnTrial {
@@ -305,7 +306,7 @@ header .menu .nav .flex:hover {
     font-size: var(--size-12);
     padding: 0 var(--size-24);
   }
-  #hero .gridBenefit .benefits {
+  #hero .benefitsFlex .benefits {
     font-size: var(--size-6);
   }
   #hero .help .tittle {
