@@ -83,6 +83,8 @@ table {
 }
 
 header {
+  max-width: 1700px;
+  margin: auto;
   background-color: var(--background-color);
   padding: var(--size-4);
   position: relative;
@@ -171,6 +173,9 @@ header .flex .menu .nav {
   }
 }
 @media all and (min-width: 1100px) {
+  header {
+    padding-top: var(--size-20);
+  }
   header nav {
     gap: var(--size-10);
     font-size: var(--size-6);
@@ -184,12 +189,14 @@ header .flex .menu .nav {
   }
 }
 #hero {
-  text-align: center;
   background-color: var(--background-color);
+  text-align: center;
 }
 #hero .tittle {
+  max-width: 1700px;
+  margin: auto;
   font-weight: 700;
-  padding: var(--size-4);
+  padding: var(--size-6);
   font-size: var(--size-8);
   text-align: center;
 }
@@ -197,6 +204,8 @@ header .flex .menu .nav {
   color: var(--orange-color);
 }
 #hero .gridBenefit .benefits {
+  max-width: 1200px;
+  margin: auto;
   padding-bottom: var(--size-3);
   display: flex;
   flex-direction: row;
@@ -222,6 +231,8 @@ header .flex .menu .nav {
   cursor: pointer;
 }
 #hero .people {
+  max-width: 1200px;
+  margin: auto;
   width: 65%;
 }
 #hero .help {
@@ -235,6 +246,8 @@ header .flex .menu .nav {
   font-weight: 500;
 }
 #hero .help .flex {
+  max-width: 1600px;
+  margin: auto;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -243,6 +256,9 @@ header .flex .menu .nav {
 #hero .help .flex .customers {
   width: 25%;
   border-right: solid 1px var(--orange-color);
+}
+#hero .help .flex .customers.last {
+  border: none;
 }
 
 @media all and (min-width: 768px) {
@@ -253,6 +269,7 @@ header .flex .menu .nav {
   }
   #hero .tittle {
     font-size: var(--size-10);
+    padding: var(--size-12);
   }
   #hero .gridBenefit {
     display: flex;
@@ -278,7 +295,7 @@ header .flex .menu .nav {
     font-weight: 500;
   }
   #hero .help .flex {
-    gap: var(--size-7);
+    gap: var(--size-10);
     justify-content: center;
   }
   #hero .help .flex .customers {
@@ -288,7 +305,7 @@ header .flex .menu .nav {
 @media all and (min-width: 1100px) {
   #hero .tittle {
     font-size: var(--size-12);
-    padding: 0 var(--size-24);
+    padding: var(--size-12) var(--size-16);
   }
   #hero .gridBenefit .benefits {
     font-size: var(--size-6);
@@ -300,7 +317,6 @@ header .flex .menu .nav {
 @media all and (min-width: 1600px) {
   #hero .tittle {
     font-size: var(--size-16);
-    padding-bottom: var(--size-8);
   }
 }
 @font-face {
@@ -318,4 +334,5 @@ html {
 body {
   margin: 0;
   font-family: Montserrat;
+  background-color: var(--background-color);
 }/*# sourceMappingURL=style.css.map */
