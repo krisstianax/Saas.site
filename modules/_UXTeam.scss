@@ -3,7 +3,9 @@
     text-align: center;
 
 .tittle{
-        padding: var(--size-8) 0;
+        max-width: 1600px; 
+        margin:auto; 
+        padding-top: var(--size-20);
         color:#000;
         font-size: var(--size-6);
         font-weight: 700;
@@ -12,7 +14,9 @@
             color:var(--orange-color);
         }
 }
-.text{
+p{
+    max-width: 1200px; 
+    margin:auto;
     padding: 0 0 var(--size-8) 0;
     font-weight: 500;
 }
@@ -58,9 +62,11 @@
         }
         .articleGrid{
             padding: 0 var(--size-16) var(--size-12) var(--size-16);
+            max-width: 1600px; 
+            margin:auto;
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: var(--size-4);
+            gap: var(--size-8);
             align-items: center;
         }
             .article{

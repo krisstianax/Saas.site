@@ -1,9 +1,15 @@
 @forward 'reset.css';
 @forward './modules/_variables';
 @forward "./modules/_header";
-@forward "./modules/_heropage";
+@forward "./modules/_hero";
 @forward './modules/UXTeam';
-@forward './modules/signUp';
+@forward './modules/_signUp';
+@forward './modules/_UXDesign';
+@forward './modules/_subscription';
+@forward './modules/_TDP';
+@forward './modules/_popularQuestions';
+@forward './modules/_join';
+@forward './modules/animate.css';
 
 @font-face {
     font-family: Montserrat;
@@ -13,7 +19,6 @@
   * {
     box-sizing: border-box;
   }
-
   
   html {
     width: 100vw;
@@ -21,12 +26,13 @@
 
   body{
     margin: 0;
-    padding: 0 var(--size-8);
+   background-color: var(--background-color);
+
     font-family: Montserrat;
   }
-@media all and (min-width:768px){ 
-  body{
-    padding: 0 var(--size-20);
-  }
-}
+// @media all and (min-width:768px){ 
+//   body{
+//     padding: 0 var(--size-20);
+//   }
+// }
 
