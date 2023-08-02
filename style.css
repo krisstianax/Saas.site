@@ -209,9 +209,10 @@ header .menu .nav .flex:hover {
   color: var(--orange-color);
 }
 #hero .benefitsFlex .benefits {
+  max-width: 1200px;
+  margin: auto;
   padding-bottom: var(--size-3);
   display: flex;
-  flex-direction: row;
   gap: var(--size-2);
   align-items: center;
   justify-content: center;
@@ -282,9 +283,7 @@ header .menu .nav .flex:hover {
     padding: var(--size-12);
   }
   #hero .benefitsFlex {
-    display: flex;
     flex-direction: column;
-    justify-content: space-between;
     gap: var(--size-10);
     padding-bottom: var(--size-8);
   }
