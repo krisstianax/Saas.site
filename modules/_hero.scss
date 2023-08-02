@@ -16,7 +16,7 @@
             color:var(--orange-color);
         }
     }
-    .gridBenefit{
+    .benefitsFlex{
         .benefits{
             max-width: 1200px; 
             margin:auto; 
@@ -27,6 +27,9 @@
             align-items: center;
             justify-content: center;
             font-weight: 500;
+
+            animation-name: fadeIn;
+            animation-duration: 5s;
             .check{
                 color:var(--orange-color);
             }
@@ -44,6 +47,11 @@
         text-transform: uppercase;
         font-weight: 500;
         cursor: pointer;
+        transition: all 0.3s ease 0s;
+    }
+    .btnTrial:hover {
+      transform: translateY(-10px);
+      background-color: var(--orange-color);
     }
     .people{
         max-width: 1200px; 
@@ -85,8 +93,9 @@
             font-size: var(--size-10);
             padding: var(--size-12);
         }
-        .gridBenefit{
+        .benefitsFlex{
             display: flex;
+            flex-direction: column;
             justify-content: space-between;
             gap: var(--size-10);
             padding-bottom: var(--size-8);
@@ -125,7 +134,7 @@
             font-size: var(--size-12);
             padding: var(--size-12) var(--size-16);
         }
-        .gridBenefit{
+        .benefitsFlex{
               .benefits{
             font-size: var(--size-6);
         }

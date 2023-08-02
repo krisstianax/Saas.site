@@ -103,7 +103,7 @@ header .flex {
   gap: var(--size-4);
   align-items: center;
 }
-header .flex .btnNav {
+header .btnNav {
   all: unset;
   padding: 0.5rem 1.5rem;
   font-weight: 500;
@@ -113,17 +113,27 @@ header .flex .btnNav {
   cursor: pointer;
   border-radius: 9px;
   background-color: var(--orange-color);
+  transition: all 0.3s ease 0s;
 }
-header .flex .menu {
+header .btnNav:hover {
+  transform: translateX(-5px);
+  background-color: #000;
+  border: none;
+}
+header .menu {
   margin: 0;
   display: flex;
   flex-direction: column;
   gap: 3px;
 }
-header .flex .menu .nav {
+header .menu .nav {
   background-color: var(--orange-color);
   height: 2px;
   width: 20px;
+  transition: all 0.3s ease 0s;
+}
+header .menu .nav .flex:hover {
+  color: var(--orange-color);
 }
 
 @media all and (min-width: 768px) {
@@ -198,9 +208,7 @@ header .flex .menu .nav {
 #hero .tittle .detail {
   color: var(--orange-color);
 }
-#hero .gridBenefit .benefits {
-  max-width: 1200px;
-  margin: auto;
+#hero .benefitsFlex .benefits {
   padding-bottom: var(--size-3);
   display: flex;
   flex-direction: row;
@@ -208,8 +216,10 @@ header .flex .menu .nav {
   align-items: center;
   justify-content: center;
   font-weight: 500;
+  animation-name: fadeIn;
+  animation-duration: 5s;
 }
-#hero .gridBenefit .benefits .check {
+#hero .benefitsFlex .benefits .check {
   color: var(--orange-color);
 }
 #hero .btnTrial {
@@ -224,6 +234,11 @@ header .flex .menu .nav {
   text-transform: uppercase;
   font-weight: 500;
   cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+#hero .btnTrial:hover {
+  transform: translateY(-10px);
+  background-color: var(--orange-color);
 }
 #hero .people {
   max-width: 1200px;
@@ -266,13 +281,14 @@ header .flex .menu .nav {
     font-size: var(--size-10);
     padding: var(--size-12);
   }
-  #hero .gridBenefit {
+  #hero .benefitsFlex {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     gap: var(--size-10);
     padding-bottom: var(--size-8);
   }
-  #hero .gridBenefit .benefits {
+  #hero .benefitsFlex .benefits {
     font-weight: 700;
   }
   #hero .btnTrial {
@@ -302,7 +318,7 @@ header .flex .menu .nav {
     font-size: var(--size-12);
     padding: var(--size-12) var(--size-16);
   }
-  #hero .gridBenefit .benefits {
+  #hero .benefitsFlex .benefits {
     font-size: var(--size-6);
   }
   #hero .help .tittle {
@@ -312,6 +328,705 @@ header .flex .menu .nav {
 @media all and (min-width: 1600px) {
   #hero .tittle {
     font-size: var(--size-16);
+  }
+}
+#UXTeam {
+  text-align: center;
+}
+#UXTeam .tittle {
+  padding: 2rem 0;
+  color: #000;
+  font-size: var(--size-6);
+  font-weight: 700;
+  line-height: 1.15;
+}
+#UXTeam .tittle .detail {
+  color: var(--orange-color);
+}
+#UXTeam p {
+  padding: 0 0 2rem 0;
+  font-weight: 500;
+}
+#UXTeam .article .svg {
+  width: 50%;
+}
+#UXTeam .article .littleTittle {
+  font-weight: 700;
+}
+
+@media all and (min-width: 768px) {
+  #UXTeam .tittle {
+    font-size: var(--size-8);
+  }
+  #UXTeam p {
+    font-size: var(--size-5);
+  }
+  #UXTeam .article .svg {
+    width: 200px;
+  }
+  #UXTeam .article .littleTittle {
+    font-size: var(--size-5);
+  }
+}
+@media all and (min-width: 1100px) {
+  #UXTeam .tittle {
+    font-size: var(--size-10);
+    padding-bottom: var(--size-8);
+  }
+  #UXTeam p {
+    font-size: var(--size-6);
+    padding-bottom: var(--size-8);
+  }
+  #UXTeam .articleGrid {
+    padding: 0 var(--size-16) var(--size-12) var(--size-16);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--size-4);
+    align-items: center;
+  }
+  #UXTeam .article .svg {
+    width: 200px;
+  }
+  #UXTeam .article .text .littleTittle {
+    font-size: var(--size-7);
+    padding-bottom: var(--size-4);
+  }
+}
+@media all and (min-width: 1600px) {
+  #UXTeam .tittle {
+    font-size: var(--size-16);
+  }
+  #UXTeam p {
+    font-size: var(--size-4);
+    padding-bottom: var(--size-12);
+  }
+  #UXTeam .articleGrid .article .svg {
+    width: 200px;
+  }
+  #UXTeam .articleGrid .article .text .littleTittle {
+    font-size: var(--size-6);
+    padding-bottom: var(--size-8);
+  }
+}
+#signUp {
+  text-align: center;
+}
+#signUp .tittle {
+  padding: 2rem 0;
+  font-size: var(--size-6);
+  font-weight: 700;
+  line-height: 1.15;
+}
+#signUp .tittle .detail {
+  color: var(--orange-color);
+}
+#signUp p {
+  padding: 0 0 2rem 0;
+  font-weight: 500;
+  text-align: center;
+}
+#signUp .number {
+  border-radius: 200px;
+  width: 50px;
+}
+#signUp .littleTittle {
+  color: var(--orange-color);
+  font-weight: 500;
+  padding-bottom: var(--size-4);
+}
+#signUp .littleTittle .ppl {
+  width: 150px;
+}
+#signUp .littleTittle .people {
+  padding-bottom: var(--size-4);
+}
+
+@media all and (min-width: 768px) {
+  #signUp .tittle {
+    font-size: var(--size-8);
+  }
+  #signUp p {
+    font-size: var(--size-5);
+  }
+  #signUp .number {
+    width: 80px;
+  }
+  #signUp .article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 var(--size-12);
+  }
+  #signUp .article .littleTittle {
+    color: var(--orange-color);
+    font-weight: 700;
+    padding-bottom: var(--size-4);
+    font-size: var(--size-5);
+  }
+  #signUp .article .littleTittle .ppl {
+    width: 150px;
+  }
+}
+@media all and (min-width: 1100px) {
+  #signUp .tittle {
+    font-size: var(--size-10);
+    padding-bottom: var(--size-8);
+  }
+  #signUp p {
+    font-size: var(--size-6);
+    padding-bottom: var(--size-8);
+  }
+  #signUp .articleGrid {
+    padding: 0 var(--size-16) var(--size-12) var(--size-16);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--size-4);
+    justify-content: center;
+  }
+  #signUp .articleGrid .article .littleTittle {
+    font-size: var(--size-7);
+  }
+}
+@media all and (min-width: 1600px) {
+  #signUp .tittle {
+    font-size: var(--size-16);
+  }
+  #signUp p {
+    font-size: var(--size-4);
+    padding-bottom: var(--size-12);
+  }
+  #signUp .articleGrid .article .littleTittle {
+    font-size: var(--size-6);
+  }
+  #signUp .articleGrid .article .littleTittle .ppl {
+    width: 250px;
+  }
+}
+#UXDesign {
+  padding: 0 var(--size-12) 0 var(--size-12);
+  background-color: var(--dark-color);
+  text-align: center;
+}
+#UXDesign .tittle {
+  padding: 2rem 0;
+  color: #fff;
+  font-size: var(--size-6);
+  font-weight: 700;
+  line-height: 1.15;
+}
+#UXDesign .tittle .detail {
+  color: var(--orange-color);
+}
+#UXDesign .gallery {
+  width: 80vw;
+}
+#UXDesign p {
+  padding: var(--size-8) 0;
+  text-align: center;
+  color: #fff;
+  font-size: var(--size-6);
+  font-weight: 700;
+  line-height: 1.15;
+}
+#UXDesign p .invertedCommas {
+  color: var(--orange-color);
+  font-size: var(--size-12);
+}
+#UXDesign .flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#UXDesign .name {
+  padding-bottom: var(--size-4);
+}
+#UXDesign .see {
+  all: unset;
+  margin-top: var(--size-6);
+  padding: var(--size-4) var(--size-8);
+  color: #fff;
+  font-weight: 500;
+  background-color: var(--orange-color);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+#UXDesign .see:hover {
+  transform: translateY(-10px);
+  background-color: #000;
+  border: solid 1px #fff;
+}
+
+@media all and (min-width: 768px) {
+  #UXDesign .tittle {
+    font-size: var(--size-8);
+  }
+  #UXDesign p {
+    font-size: var(--size-5);
+    padding: var(--size-8);
+  }
+}
+@media all and (min-width: 1100px) {
+  #UXDesign .tittle {
+    font-size: var(--size-10);
+    padding-bottom: var(--size-8);
+  }
+  #UXDesign p {
+    font-size: var(--size-5);
+    padding: var(--size-8) var(--size-20);
+  }
+}
+@media all and (min-width: 1600px) {
+  #UXDesign .tittle {
+    font-size: var(--size-16);
+    padding: var(--size-16) 0;
+  }
+  #UXDesign p {
+    font-size: var(--size-5);
+  }
+  #UXDesign .name {
+    width: 20%;
+  }
+  #UXDesign .see {
+    padding: var(--size-6) var(--size-10);
+    font-size: var(--size-6);
+  }
+}
+#subscription {
+  text-align: center;
+  background-color: #F6F6F6;
+  padding: 0 var(--size-6);
+}
+#subscription .menu {
+  margin: var(--size-8) var(--size-4);
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: center;
+  cursor: pointer;
+}
+#subscription .list {
+  all: unset;
+  font-weight: 700;
+  padding: var(--size-4) var(--size-6);
+  font-size: var(--size-3);
+  border: solid 1px var(--orange-color);
+  text-transform: uppercase;
+}
+#subscription .list.black {
+  color: #fff;
+  background-color: #000;
+  border-color: #000;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+#subscription .list.quarterly:hover {
+  transition: all 0.3s ease 0s;
+  background-color: var(--orange-color);
+}
+#subscription .list.yearly {
+  transition: all 0.3s ease 0s;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+#subscription .list.yearly:hover {
+  background-color: var(--orange-color);
+}
+#subscription .plans .plan {
+  border: solid 2px var(--orange-color);
+  border-radius: 20px;
+  padding: var(--size-8) var(--size-4);
+  margin-bottom: var(--size-4);
+}
+#subscription .plans .plan.black {
+  background-color: var(--orange-color);
+  border-color: #000;
+  color: #fff;
+}
+#subscription .plans .plan .littleTittle {
+  font-weight: 700;
+  padding-bottom: var(--size-8);
+  font-size: var(--size-8);
+}
+#subscription .plans .plan .desc {
+  display: block;
+  font-weight: 500;
+  font-size: var(--size-4);
+}
+#subscription .plans .plan .money {
+  color: var(--orange-color);
+  font-weight: 700;
+  font-size: var(--size-8);
+  padding-bottom: var(--size-8);
+  border-bottom: solid 1px var(--orange-color);
+}
+#subscription .plans .plan .money.black {
+  color: #000;
+  border-bottom: solid 1px #000;
+}
+#subscription .plans .plan .design, #subscription .plans .plan .included {
+  font-weight: 700;
+  text-align: left;
+  padding: var(--size-8) 0 var(--size-8) var(--size-4);
+}
+#subscription .plans .plan .list {
+  text-align: left;
+  border: none;
+}
+#subscription .plans .plan .list .info {
+  padding-bottom: var(--size-2);
+  padding-left: var(--size-8);
+}
+#subscription .plans .plan .team {
+  text-align: left;
+  padding-bottom: var(--size-6);
+  padding-left: var(--size-8);
+}
+#subscription .plans .plan .team.design .item {
+  padding-bottom: var(--size-2);
+  font-weight: 400;
+}
+#subscription .plans .plan .btnPlan {
+  position: relative;
+  all: unset;
+  padding: var(--size-4) var(--size-10);
+  font-weight: 600;
+  text-transform: uppercase;
+  border: solid 1px #000;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+#subscription .plans .plan .btnPlan.white {
+  border-color: #fff;
+}
+#subscription .plans .btnPlan:hover {
+  transform: translateY(-10px);
+  background-color: var(--orange-color);
+  border: none;
+}
+#subscription .plans .btnPlan:hover.white:hover {
+  background-color: #000;
+}
+#subscription .customPlan {
+  padding: var(--size-8) var(--size-8) 0 var(--size-8);
+  border-top: solid 1px #000;
+  font-weight: 700;
+  text-align: center;
+}
+#subscription .customPlan .detail {
+  color: var(--orange-color);
+  cursor: pointer;
+}
+#subscription .freePlan {
+  padding: var(--size-4) var(--size-8) var(--size-8) var(--size-8);
+}
+#subscription .start {
+  all: unset;
+  padding: var(--size-4) var(--size-10);
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: var(--orange-color);
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+#subscription .start .start:hover {
+  transform: translateY(-10px);
+  background-color: #000;
+}
+
+@media all and (min-width: 768px) {
+  #subscription {
+    padding: 0 var(--size-14);
+  }
+  #subscription .menu .list {
+    padding: var(--size-6) var(--size-8);
+    font-size: var(--size-5);
+  }
+  #subscription .plans .plan {
+    padding: var(--size-10) var(--size-5);
+    margin-bottom: var(--size-6);
+  }
+  #subscription .plans .plan .littleTittle {
+    padding-bottom: var(--size-12);
+    font-size: var(--size-8);
+  }
+  #subscription .plans .plan .desc {
+    font-size: var(--size-6);
+  }
+  #subscription .plans .plan .money {
+    padding-bottom: var(--size-10);
+    font-size: var(--size-10);
+  }
+  #subscription .plans .plan .design, #subscription .plans .plan .included {
+    font-size: var(--size-6);
+  }
+  #subscription .plans .plan .list .info {
+    font-size: var(--size-6);
+    padding-bottom: var(--size-6);
+  }
+  #subscription .plans .plan .team {
+    padding-bottom: var(--size-12);
+    font-size: var(--size-6);
+  }
+  #subscription .plans .plan .team.design .item {
+    padding-bottom: var(--size-2);
+  }
+  #subscription .plans .plan .btnPlan {
+    font-size: var(--size-8);
+    padding: var(--size-6) var(--size-12);
+  }
+  #subscription .customPlan {
+    font-size: var(--size-6);
+  }
+  #subscription .freePlan {
+    padding: var(--size-4) var(--size-8) var(--size-12) var(--size-8);
+    font-size: var(--size-5);
+  }
+  #subscription .start {
+    padding: var(--size-6) var(--size-12);
+    font-size: var(--size-8);
+  }
+}
+@media all and (min-width: 1100px) {
+  #subscription .menu {
+    margin: var(--size-8) var(--size-4);
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: center;
+  }
+  #subscription .menu .list {
+    all: unset;
+    font-weight: 700;
+    padding: var(--size-4) var(--size-6);
+    font-size: var(--size-3);
+    border: solid 1px var(--orange-color);
+    text-transform: uppercase;
+  }
+  #subscription .menu .list.black {
+    color: #fff;
+    background-color: #000;
+    border-color: #000;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  #subscription .menu .list.yearly {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  #subscription .plans {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--size-6);
+    align-items: stretch;
+    align-content: center;
+  }
+  #subscription .plans .plan {
+    display: grid;
+  }
+  #subscription .plans .plan .desc {
+    font-size: var(--size-6);
+  }
+  #subscription .plans .plan .money {
+    font-size: var(--size-10);
+  }
+}
+@media all and (min-width: 1600px) {
+  #subscription .menu .list {
+    padding: var(--size-6) var(--size-8);
+    font-size: var(--size-4);
+  }
+  #subscription .plans {
+    gap: var(--size-8);
+  }
+  #subscription .plans .plan.black {
+    background-color: var(--orange-color);
+    border-color: #000;
+    color: #fff;
+  }
+  #subscription .plans .plan .littleTittle {
+    padding-bottom: var(--size-12);
+    font-size: var(--size-12);
+  }
+  #subscription .plans .plan .desc {
+    font-size: var(--size-6);
+  }
+  #subscription .plans .plan .money {
+    font-size: var(--size-12);
+  }
+  #subscription .plans .plan .team {
+    padding-right: var(--size-8);
+  }
+  #subscription .plans .plan .team.design .item {
+    padding-bottom: var(--size-6);
+  }
+}
+#TDP {
+  text-align: center;
+  background-color: #F6F6F6;
+}
+#TDP .tittle {
+  padding: var(--size-24) 0 var(--size-12) 0;
+  font-size: var(--size-6);
+  font-weight: 700;
+  line-height: 1.15;
+}
+#TDP .tittle .detail {
+  color: var(--orange-color);
+}
+#TDP ul .left, #TDP ul .right {
+  padding: var(--size-4) var(--size-6);
+  color: #fff;
+  font-weight: 500;
+}
+#TDP ul .left {
+  margin: 0 var(--size-7) var(--size-4) var(--size-4);
+  border-radius: 50px 50px 50px 0;
+  background-color: #000;
+}
+#TDP ul .right {
+  margin: 0 var(--size-4) var(--size-4) var(--size-7);
+  border-radius: 50px 50px 0 50px;
+  background-color: #000;
+}
+#TDP ul .right.first {
+  background-color: var(--orange-color);
+}
+
+@media all and (min-width: 768px) {
+  #TDP .tittle {
+    font-size: var(--size-8);
+  }
+  #TDP ul .left, #TDP ul .right {
+    padding: var(--size-6) var(--size-12);
+    font-size: var(--size-5);
+  }
+  #TDP ul .left {
+    margin: 0 var(--size-10) var(--size-8) var(--size-4);
+  }
+  #TDP ul .right {
+    margin: 0 var(--size-4) var(--size-8) var(--size-10);
+  }
+}
+@media all and (min-width: 1100px) {
+  #TDP {
+    padding: 0 var(--size-24);
+  }
+  #TDP .tittle {
+    font-size: var(--size-10);
+    padding-bottom: var(--size-8);
+  }
+  #TDP ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: start;
+  }
+  #TDP ul .left, #TDP ul .right {
+    font-size: var(--size-6);
+  }
+  #TDP ul .left {
+    margin: 0 0 var(--size-8) var(--size-4);
+  }
+}
+@media all and (min-width: 1600px) {
+  #TDP .tittle {
+    font-size: var(--size-16);
+    padding-bottom: var(--size-16);
+  }
+  #TDP ul {
+    gap: var(--size-10);
+  }
+  #TDP ul .left, #TDP ul .right {
+    font-size: var(--size-6);
+    padding: var(--size-12) var(--size-24);
+  }
+  #TDP ul .left {
+    margin: 0 0 var(--size-8) var(--size-4);
+  }
+}
+#popularQuestions {
+  padding: var(--size-4);
+  background-color: #F6F6F6;
+}
+#popularQuestions .tittle {
+  padding: var(--size-24) 0 var(--size-12) 0;
+  font-size: var(--size-6);
+  text-align: center;
+  font-weight: 700;
+  line-height: 1.15;
+}
+#popularQuestions .tittle .detail {
+  color: var(--orange-color);
+}
+#popularQuestions .list .questions {
+  position: relative;
+  margin-bottom: var(--size-6);
+  padding: var(--size-4) var(--size-6);
+  border-bottom: solid 2px var(--orange-color);
+}
+#popularQuestions .list .questions::after {
+  content: "";
+  position: absolute;
+  right: 16px;
+  transform: translate(-50%, -50%);
+  border: solid var(--orange-color);
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  cursor: pointer;
+}
+
+@media all and (min-width: 768px) {
+  #popularQuestions .tittle {
+    font-size: var(--size-8);
+  }
+  #popularQuestions .tittle .detail {
+    color: var(--orange-color);
+  }
+  #popularQuestions .list .questions {
+    font-size: var(--size-6);
+  }
+  #popularQuestions .list .questions::after {
+    border-width: 0 6px 6px 0;
+    padding: 6px;
+  }
+}
+@media all and (min-width: 1100px) {
+  #popularQuestions {
+    padding: 0 var(--size-24);
+  }
+  #popularQuestions .tittle {
+    font-size: var(--size-10);
+    padding-bottom: var(--size-8);
+  }
+  #popularQuestions .list .questions {
+    margin-bottom: var(--size-10);
+    font-size: var(--size-7);
+  }
+}
+@media all and (min-width: 1600px) {
+  #popularQuestions {
+    padding: 0 var(--size-24);
+  }
+  #popularQuestions .tittle {
+    font-size: var(--size-16);
+    padding-bottom: var(--size-8);
+  }
+  #popularQuestions .list .questions {
+    padding: var(--size-6) var(--size-10);
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 @font-face {
