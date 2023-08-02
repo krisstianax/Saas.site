@@ -254,12 +254,7 @@ header .flex .menu .nav {
     font-size: var(--size-10);
   }
 }
-@font-face {
-  font-family: Montserrat;
-  src: url(fonts/static/Outfit-ExtraLight.ttf);
-}
 #UXTeam {
-  background-color: red;
   text-align: center;
 }
 #UXTeam .tittle {
@@ -291,7 +286,7 @@ header .flex .menu .nav {
     font-size: var(--size-5);
   }
   #UXTeam .article .svg {
-    width: 40%;
+    width: 200px;
   }
   #UXTeam .article .littleTittle {
     font-size: var(--size-5);
@@ -307,10 +302,11 @@ header .flex .menu .nav {
     padding-bottom: var(--size-8);
   }
   #UXTeam .articleGrid {
-    padding: 0;
+    padding: 0 var(--size-16) var(--size-12) var(--size-16);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: var(--size-4);
+    align-items: center;
   }
   #UXTeam .article .svg {
     width: 200px;
@@ -320,27 +316,198 @@ header .flex .menu .nav {
     padding-bottom: var(--size-4);
   }
 }
-@media all and (min-width: 1100px) {
+@media all and (min-width: 1600px) {
   #UXTeam .tittle {
-    font-size: var(--size-10);
-    padding: var(--size-23) 0 var(--size-10) 0;
+    font-size: var(--size-16);
   }
   #UXTeam p {
+    font-size: var(--size-4);
+    padding-bottom: var(--size-12);
+  }
+  #UXTeam .articleGrid .article .svg {
+    width: 200px;
+  }
+  #UXTeam .articleGrid .article .text .littleTittle {
     font-size: var(--size-6);
     padding-bottom: var(--size-8);
   }
-  #UXTeam .articleGrid {
-    padding: 0 var(--size-4) 0 var(--size-4);
+}
+#signUp {
+  text-align: center;
+}
+#signUp .tittle {
+  padding: 2rem 0;
+  font-size: var(--size-6);
+  font-weight: 700;
+  line-height: 1.15;
+}
+#signUp .tittle .detail {
+  color: var(--orange-color);
+}
+#signUp p {
+  padding: 0 0 2rem 0;
+  font-weight: 500;
+  text-align: center;
+}
+#signUp .number {
+  border-radius: 200px;
+  width: 50px;
+}
+#signUp .littleTittle {
+  color: var(--orange-color);
+  font-weight: 500;
+  padding-bottom: var(--size-4);
+}
+#signUp .littleTittle .ppl {
+  width: 150px;
+}
+#signUp .littleTittle .people {
+  padding-bottom: var(--size-4);
+}
+
+@media all and (min-width: 768px) {
+  #signUp .tittle {
+    font-size: var(--size-8);
+  }
+  #signUp p {
+    font-size: var(--size-5);
+  }
+  #signUp .number {
+    width: 80px;
+  }
+  #signUp .article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 var(--size-12);
+  }
+  #signUp .article .littleTittle {
+    color: var(--orange-color);
+    font-weight: 700;
+    padding-bottom: var(--size-4);
+    font-size: var(--size-5);
+  }
+  #signUp .article .littleTittle .ppl {
+    width: 150px;
+  }
+}
+@media all and (min-width: 1100px) {
+  #signUp .tittle {
+    font-size: var(--size-10);
+    padding-bottom: var(--size-8);
+  }
+  #signUp p {
+    font-size: var(--size-6);
+    padding-bottom: var(--size-8);
+  }
+  #signUp .articleGrid {
+    padding: 0 var(--size-16) var(--size-12) var(--size-16);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: var(--size-4);
+    justify-content: center;
   }
-  #UXTeam .article .svg {
-    width: 200px;
-  }
-  #UXTeam .article .text .littleTittle {
+  #signUp .articleGrid .article .littleTittle {
     font-size: var(--size-7);
-    padding-bottom: var(--size-4);
+  }
+}
+@media all and (min-width: 1600px) {
+  #signUp .tittle {
+    font-size: var(--size-16);
+  }
+  #signUp p {
+    font-size: var(--size-4);
+    padding-bottom: var(--size-12);
+  }
+  #signUp .articleGrid .article .littleTittle {
+    font-size: var(--size-6);
+  }
+  #signUp .articleGrid .article .littleTittle .ppl {
+    width: 250px;
+  }
+}
+#UXDesign {
+  padding: 0 var(--size-12) 0 var(--size-12);
+  background-color: var(--dark-color);
+  text-align: center;
+}
+#UXDesign .tittle {
+  padding: 2rem 0;
+  color: #fff;
+  font-size: var(--size-6);
+  font-weight: 700;
+  line-height: 1.15;
+}
+#UXDesign .tittle .detail {
+  color: var(--orange-color);
+}
+#UXDesign .gallery {
+  width: 80vw;
+}
+#UXDesign p {
+  padding: var(--size-8) 0;
+  text-align: center;
+  color: #fff;
+  font-size: var(--size-6);
+  font-weight: 700;
+  line-height: 1.15;
+}
+#UXDesign p .invertedCommas {
+  color: var(--orange-color);
+  font-size: var(--size-12);
+}
+#UXDesign .flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#UXDesign .name {
+  padding-bottom: var(--size-4);
+}
+#UXDesign .see {
+  all: unset;
+  margin-top: var(--size-6);
+  padding: var(--size-4) var(--size-8);
+  color: #fff;
+  font-weight: 500;
+  background-color: var(--orange-color);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+@media all and (min-width: 768px) {
+  #UXDesign .tittle {
+    font-size: var(--size-8);
+  }
+  #UXDesign p {
+    font-size: var(--size-5);
+    padding: var(--size-8);
+  }
+}
+@media all and (min-width: 1100px) {
+  #UXDesign .tittle {
+    font-size: var(--size-10);
+    padding-bottom: var(--size-8);
+  }
+  #UXDesign p {
+    font-size: var(--size-5);
+    padding: var(--size-8) var(--size-20);
+  }
+}
+@media all and (min-width: 1600px) {
+  #UXDesign .tittle {
+    font-size: var(--size-16);
+    padding: var(--size-16) 0;
+  }
+  #UXDesign p {
+    font-size: var(--size-5);
+  }
+  #UXDesign .name {
+    width: 20%;
+  }
+  #UXDesign .see {
+    padding: var(--size-6) var(--size-10);
+    font-size: var(--size-6);
   }
 }
 @font-face {
