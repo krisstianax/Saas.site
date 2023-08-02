@@ -83,6 +83,8 @@ table {
 }
 
 header {
+  max-width: 1700px;
+  margin: auto;
   background-color: var(--background-color);
   padding: var(--size-4);
   position: relative;
@@ -103,7 +105,7 @@ header .flex {
   gap: var(--size-4);
   align-items: center;
 }
-header .btnNav {
+header .flex .btnNav {
   all: unset;
   padding: 0.5rem 1.5rem;
   font-weight: 500;
@@ -113,27 +115,17 @@ header .btnNav {
   cursor: pointer;
   border-radius: 9px;
   background-color: var(--orange-color);
-  transition: all 0.3s ease 0s;
 }
-header .btnNav:hover {
-  transform: translateX(-5px);
-  background-color: #000;
-  border: none;
-}
-header .menu {
+header .flex .menu {
   margin: 0;
   display: flex;
   flex-direction: column;
   gap: 3px;
 }
-header .menu .nav {
+header .flex .menu .nav {
   background-color: var(--orange-color);
   height: 2px;
   width: 20px;
-  transition: all 0.3s ease 0s;
-}
-header .menu .nav .flex:hover {
-  color: var(--orange-color);
 }
 
 @media all and (min-width: 768px) {
@@ -181,6 +173,9 @@ header .menu .nav .flex:hover {
   }
 }
 @media all and (min-width: 1100px) {
+  header {
+    padding-top: var(--size-20);
+  }
   header nav {
     gap: var(--size-10);
     font-size: var(--size-6);
@@ -1042,5 +1037,6 @@ html {
 
 body {
   margin: 0;
+  background-color: var(--background-color);
   font-family: Montserrat;
 }/*# sourceMappingURL=style.css.map */
