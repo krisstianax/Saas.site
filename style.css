@@ -278,12 +278,13 @@ header .flex .menu .nav {
     padding: var(--size-12);
   }
   #hero .benefitsFlex {
-    flex-direction: column;
-    gap: var(--size-10);
+    display: flex;
+    flex-direction: row;
+    gap: var(--size-6);
     padding-bottom: var(--size-8);
   }
   #hero .benefitsFlex .benefits {
-    font-weight: 700;
+    font-weight: 500;
   }
   #hero .btnTrial {
     margin-bottom: var(--size-8);
