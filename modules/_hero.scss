@@ -20,6 +20,9 @@
             align-items: center;
             justify-content: center;
             font-weight: 500;
+
+            animation-name: fadeIn;
+            animation-duration: 5s;
             .check{
                 color:var(--orange-color);
             }
