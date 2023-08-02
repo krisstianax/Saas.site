@@ -412,7 +412,9 @@ header .flex .menu .nav {
   text-align: center;
 }
 #signUp .tittle {
-  padding: 2rem 0;
+  max-width: 1600px;
+  margin: auto;
+  padding: var(--size-8) 0;
   font-size: var(--size-6);
   font-weight: 700;
   line-height: 1.15;
@@ -421,13 +423,20 @@ header .flex .menu .nav {
   color: var(--orange-color);
 }
 #signUp p {
-  padding: 0 0 2rem 0;
+  max-width: 1400px;
+  margin: auto;
+  padding: 0 0 var(--size-8) 0;
   font-weight: 500;
   text-align: center;
 }
 #signUp .number {
-  border-radius: 200px;
-  width: 50px;
+  margin-bottom: var(--size-8);
+  font-size: var(--size-14);
+  padding: var(--size-2) var(--size-2) var(--size-2) var(--size-1);
+  font-weight: 500;
+  color: #fff;
+  background-color: var(--orange-color);
+  border-radius: 50px;
 }
 #signUp .littleTittle {
   color: var(--orange-color);
@@ -477,6 +486,8 @@ header .flex .menu .nav {
     padding-bottom: var(--size-8);
   }
   #signUp .articleGrid {
+    max-width: 1600px;
+    margin: auto;
     padding: 0 var(--size-16) var(--size-12) var(--size-16);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
