@@ -651,6 +651,7 @@ header .flex .menu .nav {
 #subscription .plans {
   max-width: 1600px;
   margin: auto;
+  position: relative;
 }
 #subscription .plans .plan {
   border: solid 2px var(--orange-color);
@@ -709,8 +710,8 @@ header .flex .menu .nav {
   font-weight: 400;
 }
 #subscription .plans .plan .btnPlan {
-  position: relative;
   all: unset;
+  position: relative;
   padding: var(--size-4) var(--size-10);
   font-weight: 600;
   text-transform: uppercase;
@@ -729,6 +730,16 @@ header .flex .menu .nav {
 }
 #subscription .plans .btnPlan:hover.white:hover {
   background-color: #000;
+}
+#subscription .plans .arrow {
+  content: "";
+  display: block;
+  width: 2px;
+  height: 45px;
+  background-color: black;
+  transform: rotate(-45deg) translate(15px, 4px);
+  left: 0;
+  top: 0;
 }
 #subscription .customPlan {
   padding: var(--size-8) var(--size-8) 0 var(--size-8);
