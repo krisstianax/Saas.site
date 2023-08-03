@@ -67,7 +67,7 @@ p{
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: var(--size-8);
-            align-items: center;
+            align-items:baseline;
         }
             .article{
                 .svg{
