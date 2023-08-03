@@ -612,7 +612,7 @@ header .flex .menu .nav {
 #subscription {
   text-align: center;
   background-color: #F6F6F6;
-  padding: 0 var(--size-6);
+  padding: var(--size-14) var(--size-6);
 }
 #subscription .menu {
   margin: 0 var(--size-4) var(--size-8) var(--size-4);
@@ -711,6 +711,32 @@ header .flex .menu .nav {
 #subscription .plans .plan .btnPlan.white {
   border-color: #fff;
 }
+#subscription .plans .plan .arrow {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  left: 5px;
+  bottom: 4px;
+  height: 4px;
+  background-color: #000;
+}
+#subscription .plans .plan .arrow::after {
+  content: "";
+  position: absolute;
+  display: block;
+  right: 0px;
+  top: -4px;
+  border: solid #000;
+  border-width: 0 4px 4px 0;
+  padding: 4px;
+  transform: rotate(-45deg);
+}
+#subscription .plans .plan .arrow.white {
+  background-color: #fff;
+}
+#subscription .plans .plan .arrow.white::after {
+  border-color: #fff;
+}
 #subscription .customPlan {
   padding: var(--size-8) var(--size-8) 0 var(--size-8);
   border-top: solid 1px #000;
@@ -737,7 +763,7 @@ header .flex .menu .nav {
 
 @media all and (min-width: 768px) {
   #subscription {
-    padding: 0 var(--size-14);
+    padding: var(--size-14);
   }
   #subscription .menu .list {
     padding: var(--size-6) var(--size-8);
@@ -776,14 +802,26 @@ header .flex .menu .nav {
     font-size: var(--size-8);
     padding: var(--size-6) var(--size-12);
   }
-  #subscription .customPlan {
+  #subscription .plans .plan .arrow {
+    width: 30px;
+    left: 5px;
+    bottom: 7px;
+    height: 5px;
+  }
+  #subscription .plans .plan .arrow::after {
+    border-width: 0 6px 6px 0;
+    padding: 5px;
+    right: 0px;
+    top: -5px;
+  }
+  .customPlan {
     font-size: var(--size-6);
   }
-  #subscription .freePlan {
+  .freePlan {
     padding: var(--size-4) var(--size-8) var(--size-12) var(--size-8);
     font-size: var(--size-5);
   }
-  #subscription .start {
+  .start {
     padding: var(--size-6) var(--size-12);
     font-size: var(--size-8);
   }
@@ -822,7 +860,9 @@ header .flex .menu .nav {
     align-content: center;
   }
   #subscription .plans .plan {
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
   #subscription .plans .plan .desc {
     font-size: var(--size-6);
