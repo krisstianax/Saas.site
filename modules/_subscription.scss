@@ -1,7 +1,7 @@
 #subscription{
     text-align: center;
     background-color:#F6F6F6;
-    padding: 0 var(--size-6);
+    padding: var(--size-14) var(--size-6);
     .menu{
         margin: 0 var(--size-4) var(--size-8) var(--size-4);
         display: flex;
@@ -101,6 +101,32 @@
                 border-color: #fff;
             }
         }
+    .arrow{
+        position: relative;
+        display: inline-block;
+        width: 20px;
+        left:5px;
+        bottom:4px;
+        height: 4px;
+        background-color: #000;
+        &::after{
+            content: '';
+            position: absolute;
+            display: block;
+            right: 0px;
+            top: -4px;
+            border: solid #000;
+            border-width: 0 4px 4px 0;
+            padding: 4px;
+            transform: rotate(-45deg);
+        }
+        &.white{
+            background-color: #fff;
+            &::after{
+                border-color: #fff;
+            }    
+        }
+    }
         }
     }
 
@@ -131,7 +157,7 @@
 }
 @media all and (min-width:768px){
     #subscription{
-        padding: 0 var(--size-14);
+        padding:var(--size-14);
         .menu{
             .list{
                 padding: var(--size-6) var(--size-8);
@@ -169,15 +195,28 @@
                 .item{
                     padding-bottom: var(--size-2);
                 }
+            
             }
-            }
+        }
             .btnPlan{
                 font-size: var(--size-8);
                 padding: var(--size-6) var(--size-12);
-        
             }
+            .arrow{
+                width: 30px;
+                left:5px;
+                bottom:7px;
+                height: 5px;
+                &::after{
+                    border-width: 0 6px 6px 0;
+                    padding: 5px;
+                    right: 0px;
+                    top: -5px;
+                }
         }
     }
+}
+        }
         .customPlan{
             font-size: var(--size-6);
         }  
@@ -190,7 +229,9 @@
             font-size: var(--size-8);
         }  
     }
-}
+
+
+
     @media all and (min-width:1100px){
         #subscription{
             .menu{
@@ -226,8 +267,11 @@
                 gap: var(--size-6);
                 align-items: stretch;
                 align-content: center;
+                // align-items: end;
                 .plan{
-                    display: grid;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
                     .desc{
                         font-size: var(--size-6);
                     }
