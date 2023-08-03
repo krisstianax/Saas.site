@@ -1,7 +1,4 @@
-@font-face {
-    font-family: Montserrat;
-    src: url(fonts/static/Outfit-ExtraLight.ttf);
-}
+
 #heropage{
     text-align: center;
     background-color:var(--background-color);
@@ -46,7 +43,7 @@
     .help{
         background-color:var(--dark-color);
         .tittle{
-            padding: 2rem 0;
+            padding: var(--size-8) 0;
             color:#fff;
             font-size: var(--size-6);
             font-weight: 500;
@@ -74,7 +71,7 @@
         }
         .flexBenefit{
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
             justify-content: center;
             gap: var(--size-4);
 

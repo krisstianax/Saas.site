@@ -1,9 +1,11 @@
 #UXDesign{
-    padding: 0 var(--size-12) 0 var(--size-12);
+    padding:var(--size-12) 0;
     background-color: var(--dark-color);
     text-align: center;
     .tittle{
-        padding: 2rem 0;
+        max-width: 1600px; 
+        margin:auto; 
+        padding: var(--size-8) 0;
         color: #fff;
         font-size: var(--size-6);
         font-weight: 700;
@@ -14,8 +16,12 @@
     }
     .gallery{
         width: 80vw;
+        max-width: 1600px; 
+        margin:auto; 
     }
     p{
+        max-width: 1400px; 
+        margin:auto; 
         padding: var(--size-8) 0;
         // max-width: 1000px;
         text-align: center;
@@ -34,6 +40,8 @@
             align-items: center;
         }
         .name{
+            max-width: 10%; 
+            margin:auto; 
             padding-bottom: var(--size-4);
         }
         .see{
@@ -87,9 +95,6 @@ p{
         }
         p{
             font-size: var(--size-5);
-        }
-        .name{
-            width: 20%;
         }
         .see{
             padding: var(--size-6) var(--size-10);

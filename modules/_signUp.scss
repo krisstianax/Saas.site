@@ -1,7 +1,9 @@
 #signUp{
 text-align: center;
 .tittle{
-    padding: 2rem 0;
+    max-width: 1600px; 
+    margin:auto; 
+    padding: var(--size-8) 0;
     font-size: var(--size-6);
     font-weight: 700;
     line-height: 1.15;
@@ -10,13 +12,20 @@ text-align: center;
     }
 }
 p{
-    padding: 0 0 2rem 0;
+    max-width: 1400px; 
+    margin:auto; 
+    padding: 0 0 var(--size-8) 0;
     font-weight: 500;
     text-align: center;
 }
         .number{
-            border-radius:200px;
-            width: 50px;
+            margin-bottom: var(--size-8);
+            font-size: var(--size-14);
+            padding: var(--size-2) var(--size-2) var(--size-2) var(--size-1);
+            font-weight: 500;
+            color: #fff;
+            background-color: var(--orange-color);
+            border-radius: 50px;
         }
             .littleTittle{
                 color: var(--orange-color);
@@ -24,14 +33,7 @@ p{
                 padding-bottom: var(--size-4 );
             .ppl{
                 width: 150px;
-            }
-//         .gradient-blur {
-//             position: fixed;
-//             z-index: 5;
-//             inset: auto 0 0 0;
-//             height: 65%;
-//             pointer-events: none;
-// }    
+            }  
         .people{
             padding-bottom: var(--size-4);
         }
@@ -77,6 +79,8 @@ p{
     padding-bottom: var(--size-8);
 }
 .articleGrid{
+    max-width: 1600px; 
+    margin:auto; 
     padding: 0 var(--size-16) var(--size-12) var(--size-16);
     display: grid;
     grid-template-columns: repeat(3, 1fr);

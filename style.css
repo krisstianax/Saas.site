@@ -278,12 +278,13 @@ header .flex .menu .nav {
     padding: var(--size-12);
   }
   #hero .benefitsFlex {
-    flex-direction: column;
-    gap: var(--size-10);
+    display: flex;
+    flex-direction: row;
+    gap: var(--size-6);
     padding-bottom: var(--size-8);
   }
   #hero .benefitsFlex .benefits {
-    font-weight: 700;
+    font-weight: 500;
   }
   #hero .btnTrial {
     margin-bottom: var(--size-8);
@@ -356,7 +357,7 @@ header .flex .menu .nav {
   #UXTeam .tittle {
     font-size: var(--size-8);
   }
-  #UXTeam p {
+  #UXTeam .text {
     font-size: var(--size-5);
   }
   #UXTeam .article .svg {
@@ -371,7 +372,7 @@ header .flex .menu .nav {
     font-size: var(--size-10);
     padding-bottom: var(--size-8);
   }
-  #UXTeam p {
+  #UXTeam .text {
     font-size: var(--size-6);
     padding-bottom: var(--size-8);
   }
@@ -396,7 +397,7 @@ header .flex .menu .nav {
   #UXTeam .tittle {
     font-size: var(--size-16);
   }
-  #UXTeam p {
+  #UXTeam .text {
     font-size: var(--size-4);
     padding-bottom: var(--size-12);
   }
@@ -412,7 +413,9 @@ header .flex .menu .nav {
   text-align: center;
 }
 #signUp .tittle {
-  padding: 2rem 0;
+  max-width: 1600px;
+  margin: auto;
+  padding: var(--size-8) 0;
   font-size: var(--size-6);
   font-weight: 700;
   line-height: 1.15;
@@ -421,13 +424,20 @@ header .flex .menu .nav {
   color: var(--orange-color);
 }
 #signUp p {
-  padding: 0 0 2rem 0;
+  max-width: 1400px;
+  margin: auto;
+  padding: 0 0 var(--size-8) 0;
   font-weight: 500;
   text-align: center;
 }
 #signUp .number {
-  border-radius: 200px;
-  width: 50px;
+  margin-bottom: var(--size-8);
+  font-size: var(--size-14);
+  padding: var(--size-2) var(--size-2) var(--size-2) var(--size-1);
+  font-weight: 500;
+  color: #fff;
+  background-color: var(--orange-color);
+  border-radius: 50px;
 }
 #signUp .littleTittle {
   color: var(--orange-color);
@@ -477,6 +487,8 @@ header .flex .menu .nav {
     padding-bottom: var(--size-8);
   }
   #signUp .articleGrid {
+    max-width: 1600px;
+    margin: auto;
     padding: 0 var(--size-16) var(--size-12) var(--size-16);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -503,12 +515,14 @@ header .flex .menu .nav {
   }
 }
 #UXDesign {
-  padding: 0 var(--size-12) 0 var(--size-12);
+  padding: var(--size-12) 0;
   background-color: var(--dark-color);
   text-align: center;
 }
 #UXDesign .tittle {
-  padding: 2rem 0;
+  max-width: 1600px;
+  margin: auto;
+  padding: var(--size-8) 0;
   color: #fff;
   font-size: var(--size-6);
   font-weight: 700;
@@ -519,8 +533,12 @@ header .flex .menu .nav {
 }
 #UXDesign .gallery {
   width: 80vw;
+  max-width: 1600px;
+  margin: auto;
 }
 #UXDesign p {
+  max-width: 1400px;
+  margin: auto;
   padding: var(--size-8) 0;
   text-align: center;
   color: #fff;
@@ -538,6 +556,8 @@ header .flex .menu .nav {
   align-items: center;
 }
 #UXDesign .name {
+  max-width: 10%;
+  margin: auto;
   padding-bottom: var(--size-4);
 }
 #UXDesign .see {
@@ -584,9 +604,6 @@ header .flex .menu .nav {
   #UXDesign p {
     font-size: var(--size-5);
   }
-  #UXDesign .name {
-    width: 20%;
-  }
   #UXDesign .see {
     padding: var(--size-6) var(--size-10);
     font-size: var(--size-6);
@@ -595,17 +612,17 @@ header .flex .menu .nav {
 #subscription {
   text-align: center;
   background-color: #F6F6F6;
-  padding: 0 var(--size-6);
+  padding: var(--size-14) var(--size-6);
 }
 #subscription .menu {
-  margin: var(--size-8) var(--size-4);
+  margin: 0 var(--size-4) var(--size-8) var(--size-4);
   display: flex;
   flex-direction: row;
   list-style: none;
   justify-content: center;
   cursor: pointer;
 }
-#subscription .list {
+#subscription .menu .list {
   all: unset;
   font-weight: 700;
   padding: var(--size-4) var(--size-6);
@@ -613,24 +630,20 @@ header .flex .menu .nav {
   border: solid 1px var(--orange-color);
   text-transform: uppercase;
 }
-#subscription .list.black {
+#subscription .menu .list.black {
   color: #fff;
   background-color: #000;
   border-color: #000;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
 }
-#subscription .list.quarterly:hover {
-  transition: all 0.3s ease 0s;
-  background-color: var(--orange-color);
-}
-#subscription .list.yearly {
-  transition: all 0.3s ease 0s;
+#subscription .menu .list.yearly {
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
 }
-#subscription .list.yearly:hover {
-  background-color: var(--orange-color);
+#subscription .plans {
+  max-width: 1600px;
+  margin: auto;
 }
 #subscription .plans .plan {
   border: solid 2px var(--orange-color);
@@ -671,7 +684,6 @@ header .flex .menu .nav {
 }
 #subscription .plans .plan .list {
   text-align: left;
-  border: none;
 }
 #subscription .plans .plan .list .info {
   padding-bottom: var(--size-2);
@@ -695,18 +707,35 @@ header .flex .menu .nav {
   border: solid 1px #000;
   border-radius: 20px;
   cursor: pointer;
-  transition: all 0.3s ease 0s;
 }
 #subscription .plans .plan .btnPlan.white {
   border-color: #fff;
 }
-#subscription .plans .btnPlan:hover {
-  transform: translateY(-10px);
-  background-color: var(--orange-color);
-  border: none;
-}
-#subscription .plans .btnPlan:hover.white:hover {
+#subscription .plans .plan .arrow {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  left: 5px;
+  bottom: 4px;
+  height: 4px;
   background-color: #000;
+}
+#subscription .plans .plan .arrow::after {
+  content: "";
+  position: absolute;
+  display: block;
+  right: 0px;
+  top: -4px;
+  border: solid #000;
+  border-width: 0 4px 4px 0;
+  padding: 4px;
+  transform: rotate(-45deg);
+}
+#subscription .plans .plan .arrow.white {
+  background-color: #fff;
+}
+#subscription .plans .plan .arrow.white::after {
+  border-color: #fff;
 }
 #subscription .customPlan {
   padding: var(--size-8) var(--size-8) 0 var(--size-8);
@@ -730,16 +759,11 @@ header .flex .menu .nav {
   background-color: var(--orange-color);
   border-radius: 20px;
   cursor: pointer;
-  transition: all 0.3s ease 0s;
-}
-#subscription .start .start:hover {
-  transform: translateY(-10px);
-  background-color: #000;
 }
 
 @media all and (min-width: 768px) {
   #subscription {
-    padding: 0 var(--size-14);
+    padding: var(--size-14);
   }
   #subscription .menu .list {
     padding: var(--size-6) var(--size-8);
@@ -778,21 +802,32 @@ header .flex .menu .nav {
     font-size: var(--size-8);
     padding: var(--size-6) var(--size-12);
   }
-  #subscription .customPlan {
+  #subscription .plans .plan .arrow {
+    width: 30px;
+    left: 5px;
+    bottom: 7px;
+    height: 5px;
+  }
+  #subscription .plans .plan .arrow::after {
+    border-width: 0 6px 6px 0;
+    padding: 5px;
+    right: 0px;
+    top: -5px;
+  }
+  .customPlan {
     font-size: var(--size-6);
   }
-  #subscription .freePlan {
+  .freePlan {
     padding: var(--size-4) var(--size-8) var(--size-12) var(--size-8);
     font-size: var(--size-5);
   }
-  #subscription .start {
+  .start {
     padding: var(--size-6) var(--size-12);
     font-size: var(--size-8);
   }
 }
 @media all and (min-width: 1100px) {
   #subscription .menu {
-    margin: var(--size-8) var(--size-4);
     display: flex;
     flex-direction: row;
     list-style: none;
@@ -825,7 +860,9 @@ header .flex .menu .nav {
     align-content: center;
   }
   #subscription .plans .plan {
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
   #subscription .plans .plan .desc {
     font-size: var(--size-6);
@@ -869,6 +906,8 @@ header .flex .menu .nav {
   background-color: #F6F6F6;
 }
 #TDP .tittle {
+  max-width: 1600;
+  margin: 0;
   padding: var(--size-24) 0 var(--size-12) 0;
   font-size: var(--size-6);
   font-weight: 700;
@@ -877,22 +916,26 @@ header .flex .menu .nav {
 #TDP .tittle .detail {
   color: var(--orange-color);
 }
-#TDP ul .left, #TDP ul .right {
+#TDP .list {
+  max-width: 1600px;
+  margin: auto;
+}
+#TDP .list ul .left, #TDP .list ul .right {
   padding: var(--size-4) var(--size-6);
   color: #fff;
   font-weight: 500;
 }
-#TDP ul .left {
+#TDP .list ul .left {
   margin: 0 var(--size-7) var(--size-4) var(--size-4);
   border-radius: 50px 50px 50px 0;
   background-color: #000;
 }
-#TDP ul .right {
+#TDP .list ul .right {
   margin: 0 var(--size-4) var(--size-4) var(--size-7);
   border-radius: 50px 50px 0 50px;
   background-color: #000;
 }
-#TDP ul .right.first {
+#TDP .list ul .right.first {
   background-color: var(--orange-color);
 }
 
@@ -900,14 +943,14 @@ header .flex .menu .nav {
   #TDP .tittle {
     font-size: var(--size-8);
   }
-  #TDP ul .left, #TDP ul .right {
-    padding: var(--size-6) var(--size-12);
+  #TDP .list ul .left, #TDP .list ul .right {
+    padding: var(--size-10) var(--size-16);
     font-size: var(--size-5);
   }
-  #TDP ul .left {
+  #TDP .list ul .left {
     margin: 0 var(--size-10) var(--size-8) var(--size-4);
   }
-  #TDP ul .right {
+  #TDP .list ul .right {
     margin: 0 var(--size-4) var(--size-8) var(--size-10);
   }
 }
@@ -919,15 +962,15 @@ header .flex .menu .nav {
     font-size: var(--size-10);
     padding-bottom: var(--size-8);
   }
-  #TDP ul {
+  #TDP .list ul {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: start;
   }
-  #TDP ul .left, #TDP ul .right {
+  #TDP .list ul .left, #TDP .list ul .right {
     font-size: var(--size-6);
   }
-  #TDP ul .left {
+  #TDP .list ul .left {
     margin: 0 0 var(--size-8) var(--size-4);
   }
 }
@@ -1019,6 +1062,74 @@ header .flex .menu .nav {
   }
   #popularQuestions .list .questions {
     padding: var(--size-6) var(--size-10);
+  }
+}
+#join {
+  text-align: center;
+  background-color: #F6F6F6;
+}
+#join .tittle {
+  max-width: 1600;
+  margin: 0;
+  padding: var(--size-24) 0 var(--size-4) 0;
+  font-size: var(--size-6);
+  font-weight: 700;
+  line-height: 1.15;
+}
+#join .tittle .detail {
+  color: var(--orange-color);
+}
+#join p {
+  max-width: 1200px;
+  margin: auto;
+  font-weight: 500;
+}
+#join .start {
+  all: unset;
+  display: block;
+  margin: var(--size-8) auto;
+  padding: var(--size-4) var(--size-10);
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: var(--orange-color);
+  border-radius: 20px;
+  cursor: pointer;
+}
+#join .people {
+  width: 60%;
+  max-width: 40%;
+  margin: auto;
+}
+
+@media all and (min-width: 768px) {
+  #join .tittle {
+    font-size: var(--size-8);
+  }
+  #join p {
+    font-size: var(--size-5);
+    padding: var(--size-8);
+  }
+  #join .start {
+    padding: var(--size-6) var(--size-12);
+    font-size: var(--size-8);
+  }
+}
+@media all and (min-width: 1100px) {
+  #join .tittle {
+    font-size: var(--size-10);
+  }
+  #join p {
+    font-size: var(--size-5);
+    padding: var(--size-8) var(--size-20);
+  }
+}
+@media all and (min-width: 1600px) {
+  #join .tittle {
+    font-size: var(--size-16);
+  }
+  #join p {
+    font-size: var(--size-5);
   }
 }
 @keyframes fadeIn {
