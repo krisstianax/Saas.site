@@ -1031,7 +1031,7 @@ header .flex .menu .nav {
 #join .tittle {
   max-width: 1600;
   margin: 0;
-  padding: var(--size-24) 0 var(--size-12) 0;
+  padding: var(--size-24) 0 var(--size-4) 0;
   font-size: var(--size-6);
   font-weight: 700;
   line-height: 1.15;
@@ -1042,13 +1042,12 @@ header .flex .menu .nav {
 #join p {
   max-width: 1200px;
   margin: auto;
-  padding: 0 0 var(--size-8) 0;
   font-weight: 500;
 }
 #join .start {
   all: unset;
   display: block;
-  margin: auto;
+  margin: var(--size-8) auto;
   padding: var(--size-4) var(--size-10);
   font-weight: 600;
   text-transform: uppercase;
@@ -1079,7 +1078,6 @@ header .flex .menu .nav {
 @media all and (min-width: 1100px) {
   #join .tittle {
     font-size: var(--size-10);
-    padding-bottom: var(--size-8);
   }
   #join p {
     font-size: var(--size-5);
@@ -1089,7 +1087,6 @@ header .flex .menu .nav {
 @media all and (min-width: 1600px) {
   #join .tittle {
     font-size: var(--size-16);
-    padding-bottom: var(--size-16);
   }
   #join p {
     font-size: var(--size-5);
