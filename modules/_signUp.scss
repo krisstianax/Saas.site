@@ -1,0 +1,172 @@
+#signUp{
+text-align: center;
+.tittle{
+    max-width: 1600px; 
+    margin:auto; 
+    padding: var(--size-8) 0;
+    font-size: var(--size-6);
+    font-weight: 700;
+    line-height: 1.15;
+    .detail{
+        color:var(--orange-color);
+    }
+}
+p{
+    max-width: 1400px; 
+    margin:auto; 
+    padding: 0 0 var(--size-8) 0;
+    font-weight: 500;
+    text-align: center;
+}
+        .number{
+            margin: auto;
+            position: relative;
+            width: 70px;
+            height: 70px;
+            background-color: var(--orange-color);
+            border-radius: 50px;
+            &.one::after{
+                content: '01';
+                position: absolute;
+                top:0;
+                left: 0;
+                transform: translate(18%, 25%);
+                color: #fff;
+                font-weight: 700;
+                font-size: var(--size-12);
+
+            }
+            &.two::after{
+                content: '02';
+                position: absolute;
+                top:0;
+                left: 0;
+                transform: translate(7%, 20%);
+                color: #fff;
+                font-weight: 700;
+                font-size: var(--size-12);
+
+            }
+            &.three::after{
+                content: '03';
+                position: absolute;
+                top:0;
+                left: 0;
+                transform: translate(7%, 25%);
+                color: #fff;
+                font-weight: 700;
+                font-size: var(--size-12);
+
+            }
+        }
+            .littleTittle{
+                color: var(--orange-color);
+                font-weight: 500;
+                padding-bottom: var(--size-4 );
+            .ppl{
+                width: 150px;
+            }  
+        .people{
+            padding-bottom: var(--size-4);
+        }
+        }
+    }
+    @media all and (min-width:768px){
+    #signUp{
+    .tittle{
+        font-size: var(--size-8);
+    }
+    p{
+        font-size: var(--size-5);
+    }
+        .number{
+            width: 100px;
+            height: 100px;
+            &.one::after{
+                content: '01';
+                transform: translate(20%, 29%);
+                font-size: var(--size-16);
+
+            }
+            &.two::after{
+                content: '02';
+                transform: translate(10%, 27%);
+                font-size: var(--size-16);
+
+            }
+            &.three::after{
+                content: '03';
+                transform: translate(10%, 30%);
+                font-size: var(--size-16);
+
+            }
+        }
+        .article{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0 var(--size-12);
+                .littleTittle{
+                    color: var(--orange-color);
+                    font-weight: 700;
+                    padding-bottom: var(--size-4 );
+                    font-size: var(--size-5);
+                    .ppl{
+                        width: 150px;
+                    }
+            }
+
+    }
+}
+}
+@media all and (min-width:1100px){
+#signUp{
+.tittle{
+    font-size: var(--size-10);
+    padding-bottom: var(--size-8);
+}
+p{
+    font-size: var(--size-6);
+    padding-bottom: var(--size-8);
+}
+.articleGrid{
+    max-width: 1600px; 
+    margin:auto; 
+    padding: 0 var(--size-16) var(--size-12) var(--size-16);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--size-4);
+    justify-content: center;
+    align-items: baseline;
+
+        .article{
+                .littleTittle{
+                    font-size: var(--size-7);
+            }
+
+}
+}
+}
+}
+@media all and (min-width:1600px){
+    #signUp{
+    .tittle{
+        font-size: var(--size-16);
+    }
+    p{
+        font-size: var(--size-4);
+        padding-bottom: var(--size-12);
+    }
+        .articleGrid{
+            .article{
+                    .littleTittle{
+                        font-size: var(--size-6);
+                    .ppl{
+                        width: 250px;
+                    }
+                }
+    
+    }
+    }
+}
+    }
