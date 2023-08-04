@@ -76,6 +76,7 @@
             justify-content: space-around;
             .customers{
                 width: 25%;
+                padding-right:var(--size-10);
                 border-right: solid 1px var(--orange-color);
                 &.last{
                     border: none;

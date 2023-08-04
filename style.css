@@ -261,6 +261,7 @@ header .flex .menu .nav {
 }
 #hero .help .flex .customers {
   width: 25%;
+  padding-right: var(--size-10);
   border-right: solid 1px var(--orange-color);
 }
 #hero .help .flex .customers.last {
