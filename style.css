@@ -212,8 +212,6 @@ header .flex .menu .nav {
   align-items: center;
   justify-content: center;
   font-weight: 500;
-  animation-name: fadeIn;
-  animation-duration: 5s;
 }
 #hero .benefitsFlex .benefits .check {
   color: var(--orange-color);
@@ -1186,7 +1184,7 @@ header .flex .menu .nav {
   100% {
     opacity: 1;
   }
-}
+} 
 @font-face {
   font-family: Montserrat;
   src: url(fonts/static/Outfit-ExtraLight.ttf);
