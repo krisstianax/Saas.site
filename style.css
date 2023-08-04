@@ -430,13 +430,42 @@ header .flex .menu .nav {
   text-align: center;
 }
 #signUp .number {
-  margin-bottom: var(--size-8);
-  font-size: var(--size-14);
-  padding: var(--size-2) var(--size-2) var(--size-2) var(--size-1);
-  font-weight: 500;
-  color: #fff;
+  margin: auto;
+  position: relative;
+  width: 70px;
+  height: 70px;
   background-color: var(--orange-color);
   border-radius: 50px;
+}
+#signUp .number.one::after {
+  content: "01";
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(18%, 25%);
+  color: #fff;
+  font-weight: 700;
+  font-size: var(--size-12);
+}
+#signUp .number.two::after {
+  content: "02";
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(7%, 20%);
+  color: #fff;
+  font-weight: 700;
+  font-size: var(--size-12);
+}
+#signUp .number.three::after {
+  content: "03";
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(7%, 25%);
+  color: #fff;
+  font-weight: 700;
+  font-size: var(--size-12);
 }
 #signUp .littleTittle {
   color: var(--orange-color);
@@ -458,7 +487,23 @@ header .flex .menu .nav {
     font-size: var(--size-5);
   }
   #signUp .number {
-    width: 80px;
+    width: 100px;
+    height: 100px;
+  }
+  #signUp .number.one::after {
+    content: "01";
+    transform: translate(20%, 29%);
+    font-size: var(--size-16);
+  }
+  #signUp .number.two::after {
+    content: "02";
+    transform: translate(10%, 27%);
+    font-size: var(--size-16);
+  }
+  #signUp .number.three::after {
+    content: "03";
+    transform: translate(10%, 30%);
+    font-size: var(--size-16);
   }
   #signUp .article {
     display: flex;
@@ -493,6 +538,7 @@ header .flex .menu .nav {
     grid-template-columns: repeat(3, 1fr);
     gap: var(--size-4);
     justify-content: center;
+    align-items: baseline;
   }
   #signUp .articleGrid .article .littleTittle {
     font-size: var(--size-7);
