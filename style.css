@@ -212,6 +212,18 @@ header .flex .menu .nav {
   align-items: center;
   justify-content: center;
   font-weight: 500;
+  animation: fadeIn linear 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+#hero .benefitsFlex .benefits.one {
+  animation-delay: 0.1s;
+}
+#hero .benefitsFlex .benefits.two {
+  animation-delay: 0.6s;
+}
+#hero .benefitsFlex .benefits.three {
+  animation-delay: 1.2s;
 }
 #hero .benefitsFlex .benefits .check {
   color: var(--orange-color);
@@ -238,6 +250,7 @@ header .flex .menu .nav {
   max-width: 1200px;
   margin: auto;
   width: 65%;
+  animation: floating 3s ease-in-out infinite;
 }
 #hero .help {
   background-color: var(--dark-color);
@@ -1183,6 +1196,17 @@ header .flex .menu .nav {
   }
   100% {
     opacity: 1;
+  }
+}
+@keyframes floating {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 15px);
+  }
+  100% {
+    transform: translate(0, 0px);
   }
 } 
 @font-face {

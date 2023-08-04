@@ -27,22 +27,19 @@
             align-items: center;
             justify-content: center;
             font-weight: 500;
+            animation: fadeIn linear 2s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
 
-            // &.one{
-            //     animation-name: fadeIn;
-            //     animation-delay: -1s;
-            //     animation-duration: 4s;
-            // }
-            // &.two{
-            //     animation-name: fadeIn;
-            //     animation-delay: 1s;
-            //     animation-duration: 3s;
-            // }
-            // &.three{
-            //     animation-name: fadeIn;
-            //     animation-delay: 3s;
-            //     animation-duration: 2s;
-            // }
+            &.one{
+                animation-delay: 0.1s;
+            }
+            &.two{
+                animation-delay: 0.6s;
+            }
+            &.three{
+                animation-delay: 1.2s;
+            }
             .check{
                 color:var(--orange-color);
             }
@@ -70,6 +67,7 @@
         max-width: 1200px; 
         margin:auto; 
         width: 65%;
+        animation: floating 3s ease-in-out infinite;
     }
     .help{
         background-color:var(--dark-color);
