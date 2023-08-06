@@ -9,6 +9,7 @@
 @forward './modules/_TDP';
 @forward './modules/_popularQuestions';
 @forward './modules/_join';
+@forward './modules/_footer';
 @forward './modules/animate.css';
 
 @font-face {
@@ -25,6 +26,7 @@
   }
 
   body{
+    // overflow-x: hidden;
     margin: 0;
    background-color: var(--background-color);
 

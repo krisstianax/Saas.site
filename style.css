@@ -1127,8 +1127,8 @@ header .flex .menu .nav {
   background-color: #F6F6F6;
 }
 #join .tittle {
-  max-width: 1600;
-  margin: 0;
+  max-width: 1600px;
+  margin: auto;
   padding: var(--size-24) 0 var(--size-4) 0;
   font-size: var(--size-6);
   font-weight: 700;
@@ -1188,6 +1188,131 @@ header .flex .menu .nav {
   }
   #join p {
     font-size: var(--size-5);
+  }
+}
+footer {
+  text-align: center;
+  background-color: #000;
+}
+footer .flex .main {
+  max-width: 1600px;
+  margin: auto;
+  color: #fff;
+  font-size: var(--size-6);
+  font-weight: 700;
+  padding-top: var(--size-8);
+}
+footer .flex .social_media {
+  max-width: 1600px;
+  margin: 0;
+  list-style-type: none;
+  color: #fff;
+  padding-top: var(--size-6);
+}
+footer .flex .social_media .name {
+  padding-bottom: var(--size-4);
+}
+footer .flex .social_media .name .icon.mail, footer .flex .social_media .name .icon.mail::after {
+  color: var(--orange-color);
+  display: inline-block;
+  margin-right: var(--size-2);
+  box-sizing: border-box;
+  height: 16px;
+  border: 2px solid;
+}
+footer .flex .social_media .name .icon.mail {
+  overflow: hidden;
+  transform: scale(var(--ggs, 1));
+  position: relative;
+  width: 20px;
+  border-radius: 2px;
+}
+footer .flex .social_media .name .icon.mail::after {
+  content: "";
+  position: absolute;
+  border-radius: 3px;
+  width: 14px;
+  transform: rotate(-45deg);
+  bottom: 3px;
+  left: 0;
+}
+footer .flex .social_media .name .icon.instagram {
+  color: var(--orange-color);
+  box-sizing: border-box;
+  position: relative;
+  display: inline-block;
+  margin-right: var(--size-2);
+  transform: scale(var(--ggs, 1));
+  border: 2px solid transparent;
+  box-shadow: 0 0 0 2px;
+  border-radius: 4px;
+  width: 18px;
+  height: 18px;
+}
+footer .flex .social_media .name .icon.instagram::after, footer .flex .social_media .name .icon.instagram::before {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+}
+footer .flex .social_media .name .icon.instagram::after {
+  border: 2px solid;
+  left: 2px;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  top: 2px;
+}
+footer .flex .social_media .name .icon.instagram::before {
+  border-radius: 3px;
+  width: 2px;
+  height: 2px;
+  background: currentColor;
+  right: 1px;
+  top: 1px;
+}
+footer .flex .social_media .name .icon.linkedin {
+  color: var(--orange-color);
+  position: relative;
+  display: inline-block;
+  margin-right: var(--size-2);
+  border: 2px solid transparent;
+  box-shadow: 0 0 0 2px;
+  border-radius: 4px;
+  width: 18px;
+  height: 18px;
+}
+footer .flex .social_media .name .icon.linkedin::after, footer .flex .social_media .name .icon.linkedin::before {
+  content: "in";
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+}
+footer .menu {
+  max-width: 1600px;
+  margin: 0;
+  list-style-type: none;
+  color: #fff;
+  padding-top: var(--size-6);
+}
+footer .menu .list {
+  padding-bottom: var(--size-4);
+}
+
+@media all and (min-width: 1100px) {
+  footer {
+    display: flex;
+    justify-content: space-between;
+  }
+  footer .flex .main {
+    font-size: var(--size-16);
+    text-align: left;
+  }
+  footer .flex .social_media {
+    padding-left: var(--size-8);
+    display: flex;
+    flex-direction: row;
+    gap: var(--size-8);
   }
 }
 @keyframes fadeIn {
