@@ -215,15 +215,16 @@ header .flex .menu .nav {
   animation: fadeIn linear 2s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
+  opacity: 0;
 }
 #hero .benefitsFlex .benefits.one {
-  animation-delay: 0.1s;
+  animation-delay: 0.5s;
 }
 #hero .benefitsFlex .benefits.two {
-  animation-delay: 0.6s;
+  animation-delay: 1s;
 }
 #hero .benefitsFlex .benefits.three {
-  animation-delay: 1.2s;
+  animation-delay: 1.5s;
 }
 #hero .benefitsFlex .benefits .check {
   color: var(--orange-color);
