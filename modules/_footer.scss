@@ -1,136 +1,148 @@
 footer{
     text-align: center;
     background-color: #000;
-.flex{
-    .main{
-        max-width: 1600px;
+    .wrapper{
+        max-width: 1800px;
         margin:auto;
-        color:#fff;
-        font-size: var(--size-6);
-        font-weight: 700;
-        padding-top: var(--size-8);
-    }
-    .social_media{
-        max-width: 1600px;
-        margin:0;
-        list-style-type: none;
-        color: #fff;
-        padding-top: var(--size-6);
-        .name{
-            padding-bottom: var(--size-4);
-            
-            .icon{
-                &.mail,
-                &.mail::after {
-                    color: var(--orange-color);
-                    display: inline-block;
-                    margin-right: var(--size-2);
-                    box-sizing: border-box;
-                    height: 16px;
-                    border: 2px solid
-                }
-                &.mail {
-                    overflow: hidden;
-                    transform: scale(var(--ggs,1));
-                    position: relative;
-                    width: 20px;
-                    border-radius: 2px
-                }
-                &.mail::after {
-                    content: "";
-                    position: absolute;
-                    border-radius: 3px;
-                    width: 14px;
-                    transform: rotate(-45deg);
-                    bottom: 3px;
-                    left: 0
-                }
-                &.instagram {
-                    color: var(--orange-color);
-                    box-sizing: border-box;
-                            position: relative;
-                            display: inline-block;
-                            margin-right: var(--size-2);
-                            transform: scale(var(--ggs,1));
-                            border: 2px solid transparent;
-                            box-shadow: 0 0 0 2px;
-                            border-radius: 4px;
-                            width: 18px;
-                            height: 18px;
-                        }
-                    &.instagram::after,
-                    &.instagram::before {
-                            content: "";
-                            display: block;
-                            box-sizing: border-box;
-                            position: absolute;
-                        }
-                    &.instagram::after {
-                            border: 2px solid;
-                            left: 2px;
-                            width: 10px;
-                            height: 10px;
-                            border-radius: 100%;
-                            top: 2px;
-                        }
-                    &.instagram::before {
-                            border-radius: 3px;
-                            width: 2px;
-                            height: 2px;
-                            background: currentColor;
-                            right: 1px;
-                            top: 1px
-                        }
-            
-            &.linkedin {
-                color: var(--orange-color);
-                    position: relative;
-                    display: inline-block;
-                    margin-right: var(--size-2);                border: 2px solid transparent;
-                    box-shadow: 0 0 0 2px;
-                    border-radius: 4px;
-                    width: 18px;
-                    height: 18px;
-                }
-            &.linkedin::after,
-            &.linkedin::before {
-                    content: "in";
-                    display: block;
-                    box-sizing: border-box;
-                    position: absolute;
-                }
-    }
+    .flex{
+        .main{
+            color:#fff;
+            font-size: var(--size-6);
+            font-weight: 700;
+            padding-top: var(--size-8);
         }
-    }  
-}   
-    .menu{
-        max-width: 1600px;
-        margin:0;
-        list-style-type: none;
-        color: #fff;
-        padding-top: var(--size-6);
-        .list{
-            padding-bottom: var(--size-4);
+        .social_media{
+            list-style-type: none;
+            color: #fff;
+            padding-top: var(--size-6);
+            .name{
+                padding-bottom: var(--size-4);
+                
+                .icon{
+                    &.mail,
+                    &.mail::after {
+                        color: var(--orange-color);
+                        display: inline-block;
+                        margin-right: var(--size-2);
+                        box-sizing: border-box;
+                        height: 16px;
+                        border: 2px solid
+                    }
+                    &.mail {
+                        overflow: hidden;
+                        transform: scale(var(--ggs,1));
+                        position: relative;
+                        width: 20px;
+                        border-radius: 2px
+                    }
+                    &.mail::after {
+                        content: "";
+                        position: absolute;
+                        border-radius: 3px;
+                        width: 14px;
+                        transform: rotate(-45deg);
+                        bottom: 3px;
+                        left: 0
+                    }
+                    &.instagram {
+                        color: var(--orange-color);
+                        box-sizing: border-box;
+                                position: relative;
+                                display: inline-block;
+                                margin-right: var(--size-2);
+                                transform: scale(var(--ggs,1));
+                                border: 2px solid transparent;
+                                box-shadow: 0 0 0 2px;
+                                border-radius: 4px;
+                                width: 18px;
+                                height: 18px;
+                            }
+                        &.instagram::after,
+                        &.instagram::before {
+                                content: "";
+                                display: block;
+                                box-sizing: border-box;
+                                position: absolute;
+                            }
+                        &.instagram::after {
+                                border: 2px solid;
+                                left: 2px;
+                                width: 10px;
+                                height: 10px;
+                                border-radius: 100%;
+                                top: 2px;
+                            }
+                        &.instagram::before {
+                                border-radius: 3px;
+                                width: 2px;
+                                height: 2px;
+                                background: currentColor;
+                                right: 1px;
+                                top: 1px
+                            }
+                
+                &.linkedin {
+                    color: var(--orange-color);
+                        position: relative;
+                        display: inline-block;
+                        margin-right: var(--size-2);                
+                        border: 2px solid transparent;
+                        box-shadow: 0 0 0 2px;
+                        border-radius: 4px;
+                        width: 18px;
+                        height: 18px;
+                    }
+                &.linkedin::after,
+                &.linkedin::before {
+                        content: "in";
+                        display: block;
+                        box-sizing: border-box;
+                        position: absolute;
+                    }
+        }
+            }
+        }  
+    }   
+        .menu{
+            list-style-type: none;
+            color: #fff;
+            padding-top: var(--size-6);
+            .list{
+                padding-bottom: var(--size-4);
+            }
         }
     }
     }
     @media all and (min-width:1100px){
         footer{
+            padding: var(--size-24)
+            var(--size-16);
+            .wrapper{
             display: flex;
             justify-content: space-between;
             .flex{
             .main{
-                font-size: var(--size-16);
+                font-size: var(--size-18);
                 text-align: left;
             }
             .social_media{
-                padding-left: var(--size-8);
+                padding-top: var(--size-12);
                 display: flex;
                 flex-direction: row;
                 gap: var(--size-8);
+                font-size: var(--size-6);
+            }
+        }
+        .menu{
+            text-align: right;
+            .list{
+                font-weight: 500;
+                font-size: var(--size-6);
+
             }
         }
     }
+}
 }
 
 
